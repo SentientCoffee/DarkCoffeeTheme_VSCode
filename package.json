@@ -1,10 +1,22 @@
 {
-    "name": "vscode-theme",
-    "displayName": "vscode-theme",
+    "name": "dark-coffee-theme",
+    "displayName": "Dark Coffee",
     "description": "Custom VS Code Theme",
+    "publisher": "SentientCoffee",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.50.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DanielPresas/vscode-theme"
+    },
+    "bugs": {
+        "url": "https://github.com/DanielPresas/vscode-theme/issues"
+    },
+    "galleryBanner": {
+        "color": "#1a1a1a",
+        "theme": "dark"
     },
     "categories": [
         "Themes"
@@ -12,9 +24,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Dark VS Code",
+                "label": "Dark Coffee",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Dark VS Code-color-theme.json"
+                "path": "./themes/DarkCoffee-theme.json"
             }
         ]
     }
