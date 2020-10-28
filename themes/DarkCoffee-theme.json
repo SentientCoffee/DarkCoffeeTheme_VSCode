@@ -555,25 +555,27 @@
                 "foreground": "#dd3636"
             }
         },
-        // {
-        //     "name" : "Operator, Misc",
-        //     "scope": [
-        //         // "keyword.control",
-        //         "constant.other.color",
-        //         "meta.tag",
-        //         "punctuation.definition.tag",
-        //         "punctuation.separator.inheritance.php",
-        //         "punctuation.definition.tag.html",
-        //         "punctuation.definition.tag.begin.html",
-        //         "punctuation.definition.tag.end.html",
-        //         "punctuation.section.embedded",
-        //         "keyword.other.template",
-        //         "keyword.other.substitution"
-        //     ],
-        //     "settings": {
-        //         "foreground": "#D4D4D4"
-        //     }
-        // },
+        /**
+        * {
+        *     "name" : "Operator, Misc",
+        *     "scope": [
+        *         // "keyword.control",
+        *         "constant.other.color",
+        *         "meta.tag",
+        *         "punctuation.definition.tag",
+        *         "punctuation.separator.inheritance.php",
+        *         "punctuation.definition.tag.html",
+        *         "punctuation.definition.tag.begin.html",
+        *         "punctuation.definition.tag.end.html",
+        *         "punctuation.section.embedded",
+        *         "keyword.other.template",
+        *         "keyword.other.substitution"
+        *     ],
+        *     "settings": {
+        *         "foreground": "#D4D4D4"
+        *     }
+        * },
+        */
         {
             "name" : "Tag",
             "scope": [
@@ -588,7 +590,7 @@
         {
             "name" : "Other Variable, String Link",
             "scope": [
-                "support.other.variable",
+                "support.other.variable"
             ],
             "settings": {
                 "foreground": "#f07178"
@@ -1023,17 +1025,11 @@
                 "foreground": "#EEFFFF"
             }
         },
-        // -------------------------------------------------------------------------------------------------
-        // -------------------------------------------------------------------------------------------------
-        // -------------------------------------------------------------------------------------------------
-        // -------------------------------------------------------------------------------------------------
-        // -------------------------------------------------------------------------------------------------
-        
         {
             "name"    : "C++ Class Template",
             "scope"   : "entity.name.type.class.templated",
             "settings": {
-                "foreground": "#FFEB60",
+                "foreground": "#FFEB60"
             }
         },
         {
@@ -1052,9 +1048,7 @@
                 "entity.name.function.templated",
                 "meta.function-call",
                 "keyword.other.special-method",
-                "support.function",
-
-
+                "support.function"
             ],
             "settings": {
                 "foreground": "#82B7E1"
@@ -1075,7 +1069,11 @@
                 "keyword.control",
                 "keyword.operator.at",
                 "keyword.operator.cast",
-                "storage.type.built-in"
+                "storage.type.built-in",
+                "storage.type.class",
+                "storage.type.enum",
+                "storage.type.struct",
+                "storage.type.template"
             ],
             "settings": {
                 "foreground": "#DF75DF"
@@ -1087,7 +1085,7 @@
                 "entity.other.attribute-name",
                 "keyword.control.directive",
                 "meta.preprocessor.macro",
-                "punctuation.definition.directive",
+                "punctuation.definition.directive"
             ],
             "settings": {
                 "foreground": "#FBB840"
@@ -1132,6 +1130,7 @@
         {
             "name" : "Member fields/properties",
             "scope": [
+                "entity.name.variable.field",
                 "variable.other.object.property",
                 "variable.other.property",
                 "variable.other.constant.property"
@@ -1154,7 +1153,7 @@
             "name" : "New/Delete",
             "scope": [
                 "keyword.operator.new",
-                "keyword.other.new",
+                "keyword.other.new"
             ],
             "settings": {
                 "foreground": "#86B5E3"
@@ -1172,7 +1171,7 @@
                 "punctuation.definition.tag.html",
                 "punctuation.definition.tag.begin.html",
                 "punctuation.definition.tag.end.html",
-                "punctuation.section.embedded",
+                "punctuation.section.embedded"
             ],
             "settings": {
                 "foreground": "#D4D4D4"
@@ -1192,7 +1191,7 @@
             "name" : "Parameters",
             "scope": [
                 "variable.paramater",
-                "variable.paramater.dart",
+                "entity.name.variable.parameter"
             ],"settings": {
                 "foreground": "#00FFFF",
                 "fontStyle" : "bold"
@@ -1204,7 +1203,7 @@
             "settings": {
                 "foreground": "#F748BA",
                 "fontStyle" : "bold"
-            },
+            }
         },
         {
             "name" : "Types",
@@ -1223,18 +1222,18 @@
             ],
             "settings": {
                 "foreground": "#FFEB60"
-            },
+            }
         },
         {
             "name" : "Numbers",
             "scope": [
                 "constant.numeric",
                 "entity.name.operator.custom-literal.number",
-                "keyword.other.unit",
+                "keyword.other.unit"
             ],
             "settings": {
                 "foreground": "#FF9F40"
-            },
+            }
         },
         {
             "name" : "Storage",
@@ -1264,7 +1263,7 @@
             ],
             "settings": {
                 "foreground": "#B8E272"
-            },
+            }
         },
         {
             "name"    : "String placeholders",
@@ -1281,10 +1280,6 @@
                 "foreground": "#FF8040"
             }
         },
-
-        // ---------------------------------------------------------------
-        // ---------------------------------------------------------------
-        // ---------------------------------------------------------------
         {
             "name" : "C# types",
             "scope": [
@@ -1294,9 +1289,6 @@
                 "foreground": "#FFEB60"
             }
         },
-        // ---------------------------------------------------------------
-        // ---------------------------------------------------------------
-        // ---------------------------------------------------------------
         {
             "name"    : "Dart classes",
             "scope"   : "support.class.dart",
@@ -1314,18 +1306,18 @@
             "settings":{
                 "foreground": "#F92672",
                 "fontStyle": ""
-            },
+            }
         },
         {
             "name": "Dart imports",
             "scope": [
-                "keyword.other.import",
+                "keyword.other.import"
             ],
             "settings": {
                 "foreground": "#FBB840",
                 "fontStyle" : ""
             }
-        },
+        }
         
         
     ],
@@ -1340,6 +1332,8 @@
         "customLiteral" : "#B8E272",
         "enum"          : "#FFEB60",
         "enumMember"    : "#C4E49A",
+        "field"         : "#C7529E",
+        "field.static"  : "#86B5E3",
         "function"      : "#82B7E1",
         "label"         : {
             "foreground": "#C8C8C8",
@@ -1362,6 +1356,7 @@
             "foreground": "#00FFFF",
             "fontStyle" : "bold"
         },
+        "plainKeyword": "#DF75DF",
         "property"       : "#C7529E",
         "property.static": {
             "foreground": "#F748BA",
@@ -1373,7 +1368,6 @@
         "stringEscapeCharacter": "#FF8040",
         "struct"               : "#FFEB60",
         "templateType"         : "#FFEB60",
-        "type"                 : "#FFEB60",
-    },
-
+        "type"                 : "#FFEB60"
+    }
 }
