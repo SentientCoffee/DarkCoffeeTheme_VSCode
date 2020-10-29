@@ -210,8 +210,9 @@ colors:
   extensionBadge.remoteBackground: "#ff0000"
   extensionBadge.remoteForeground: "#ff0000"
   extensionButton.prominentBackground: "#00548b"
-  extensionButton.prominentForeground: "#b4b4b4"
-  extensionButton.prominentHoverBackground: "#ff0000"
+  extensionButton.prominentForeground: "#d4d4d4"
+  extensionButton.prominentHoverBackground: "#008dc5"
+  extensionButton.prominentHoverForeground: "#d4d4d4"
 
   focusBorder: "#757575"
   foreground: "#b4b4b4"
@@ -506,7 +507,7 @@ colors:
 
   textBlockQuote.background: "#2b2b2b"
   textBlockQuote.border: "#4a4a4a"
-  textCodeBlock.background: "#ff0000"
+  textCodeBlock.background: "#2b2b2b"
   textLink.activeForeground: "#008dc5"
   textLink.foreground: "#008dc5"
   textPreformat.foreground: "#eeeeee"
