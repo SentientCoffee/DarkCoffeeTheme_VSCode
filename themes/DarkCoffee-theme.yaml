@@ -48,8 +48,8 @@ colors:
   debugConsole.warningForeground: "#ffcc44"
   debugConsoleInputIcon.foreground: "#b4b4b4"
 
-  debugExceptionWidget.background: "#ff0000"
-  debugExceptionWidget.border: "#ff0000"
+  debugExceptionWidget.background: "#232323"
+  debugExceptionWidget.border: "#dd3636"
 
   debugIcon.breakpointCurrentStackframeForeground: "#ffaa44"
   debugIcon.breakpointDisabledForeground: "#630000"
@@ -77,8 +77,8 @@ colors:
   debugToolBar.background: "#1a1a1a"
   debugToolBar.border: "#4a4a4a"
 
-  debugView.exceptionLabelBackground: "#ff0000"
-  debugView.exceptionLabelForeground: "#ff0000"
+  debugView.exceptionLabelBackground: "#dd3636"
+  debugView.exceptionLabelForeground: "#b4b4b4"
   debugView.stateLabelBackground: "#00548b"
   debugView.stateLabelForeground: "#b4b4b4"
   debugView.valueChangedHighlight: "#ff9f40"
@@ -99,7 +99,7 @@ colors:
   editor.foreground: "#d4d4d4"
   editor.findMatchBackground: "#c5944b81"
   editor.findMatchHighlightBackground: "#c5944b3a"
-  editor.focusedStackFrameHighlightBackground: "#ff0000"
+  editor.focusedStackFrameHighlightBackground: "#dd363688"
   editor.foldBackground: "#1a1a1a1a"
   editor.hoverHighlightBackground: "#4a4a4a4a"
   editor.inactiveSelectionBackground: "#4a4a4a77"
@@ -186,7 +186,7 @@ colors:
   editorOverviewRuler.wordHighlightForeground: "#ff0000"
   editorOverviewRuler.wordHighlightStrongForeground: "#ff0000"
 
-  editorPane.background: "#ff0000"
+  editorPane.background: "#00ff00" #"#dd3636"
   editorRuler.foreground: "#2b2b2b"
 
   editorSuggestWidget.background: "#1a1a1a"
@@ -216,8 +216,8 @@ colors:
   focusBorder: "#757575"
   foreground: "#b4b4b4"
 
-  gitDecoration.addedResourceForeground: "#ff0000"
-  gitDecoration.conflictingResourceForeground: "#aa6622"
+  gitDecoration.addedResourceForeground: "#00db2f"
+  gitDecoration.conflictingResourceForeground: "#007bcc"
   gitDecoration.deletedResourceForeground: "#dd3636"
   gitDecoration.ignoredResourceForeground: "#757575"
   gitDecoration.modifiedResourceForeground: "#ffcc4499"
@@ -252,7 +252,7 @@ colors:
   list.deemphasizedForeground: "#ff0000"
   list.dropBackground: "#4a4a4a77"
   list.errorForeground: "#c76363"
-  list.filterMatchBackground: "#ff0000"
+  list.filterMatchBackground: "#2b2b2b"
   list.focusBackground: "#2b2b2b"
   list.focusForeground: "#b4b4b4"
   list.highlightForeground: "#d4d4d4"
@@ -264,9 +264,9 @@ colors:
   list.invalidItemForeground: "#ff0000"
   list.warningForeground: "#d8b860"
 
-  listFilterWidget.background: "#ff0000"
-  listFilterWidget.noMatchesOutline: "#ff0000"
-  listFilterWidget.outline: "#ff0000"
+  listFilterWidget.background: "#2b2b2b"
+  listFilterWidget.noMatchesOutline: "#dd3636"
+  listFilterWidget.outline: "#4a4a4a"
 
   menu.background: "#1a1a1a"
   menu.border: "#4a4a4a"
@@ -416,7 +416,7 @@ colors:
   statusBar.noFolderBorder: "#4a4a4a"
   statusBar.noFolderForeground: "#b4b4b4"
   statusBarItem.activeBackground: "#757575"
-  statusBarItem.hoverBackground: "#4a4a4a"
+  statusBarItem.hoverBackground: "#ffffff33"
   statusBarItem.prominentBackground: "#ff0000"
   statusBarItem.prominentForeground: "#ff0000"
   statusBarItem.prominentHoverBackground: "#ff0000"
@@ -463,7 +463,6 @@ colors:
   tab.activeModifiedBorder: "#ff0000"
   tab.border: "#4a4a4a"
   tab.hoverBackground: "#4a4a4a77"
-  tab.hoverBorder: "#ff0000"
   tab.hoverForeground: "#b4b4b4"
   tab.inactiveBackground: "#1f1f1f"
   tab.inactiveForeground: "#757575"
@@ -475,7 +474,6 @@ colors:
   tab.unfocusedActiveForeground: "#757575"
   tab.unfocusedActiveModifiedBorder: "#ff0000"
   tab.unfocusedHoverBackground: "#4a4a4a77"
-  tab.unfocusedHoverBorder: "#ff0000"
   tab.unfocusedHoverForeground: "#b4b4b4"
   tab.unfocusedInactiveBackground: "#1f1f1f"
   tab.unfocusedInactiveForeground: "#4a4a4a"
@@ -542,6 +540,7 @@ semanticTokenColors:
   label:
     foreground: "#C8C8C8"
     fontStyle: bold
+  local: "#C25412"
   macro:
     foreground: "#86B5E3"
     fontStyle: bold
@@ -552,8 +551,8 @@ semanticTokenColors:
   newOperator: "#86B5E3"
   number: "#FF9F40"
   numberLiteral: "#FF9F40"
-  operator: "#DFDFDF"
-  operatorOverload: "#DFDFDF"
+  operator: "#D4D4D4"
+  operatorOverloaded: "#D4D4D4"
   parameter:
     foreground: "#00FFFF"
     fontStyle: bold
@@ -932,6 +931,7 @@ tokenColors:
     name: Enumerator
     scope:
       - variable.other.enummember
+      - entity.name.variable.enum-member
     settings:
       foreground: "#C4E49A"
   -
@@ -973,6 +973,7 @@ tokenColors:
     scope:
       - entity.other.attribute-name
       - keyword.control.directive
+      - keyword.preprocessor
       - meta.preprocessor.macro
       - punctuation.definition.directive
     settings:
@@ -995,6 +996,7 @@ tokenColors:
     name: Local variables
     scope: 
       - variable.other.global
+      - entity.name.variable.local
     settings:
       foreground: "#C25412"
   -
@@ -1002,6 +1004,7 @@ tokenColors:
     scope:
       - entity.name.function.preprocessor
       - entity.name.other.preprocessor.macro
+      - entity.name.variable.preprocessor.symbol
     settings:
       foreground: "#82B7E1"
       fontStyle : bold
@@ -1142,7 +1145,6 @@ tokenColors:
       - support.class.dart
     settings:
       foreground: "#FFEB60"
-      fontStyle : italic
   -
     name: Dart variable language
     scope:
