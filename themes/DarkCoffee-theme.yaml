@@ -184,7 +184,7 @@ colors:
   editorOverviewRuler.selectionHighlightForeground: "#b4b4b4"
   editorOverviewRuler.warningForeground: "#ffcc44"
   editorOverviewRuler.wordHighlightForeground: "#ff0000"
-  editorOverviewRuler.wordHighlightStrongForeground: "#ff0000"
+  editorOverviewRuler.wordHighlightStrongForeground: "#b4b4b4"
 
   editorPane.background: "#1a1a1a"
   editorRuler.foreground: "#2b2b2b"
