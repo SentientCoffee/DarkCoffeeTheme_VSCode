@@ -1,9 +1,18 @@
 #
-# Terminal command: npx js-yaml themes\DarkCoffee-theme.yaml > themes\DarkCoffee-theme.json
+# Terminal command: npx js-yaml themes\DarkCoffee-color-theme.yaml > themes\DarkCoffee-color-theme.json
 #
 name: Dark Coffee
 type: dark
 colors:
+  descriptionForeground: "#757575"
+  errorForeground: "#b4b4b4"
+  focusBorder: "#757575"
+  foreground: "#b4b4b4"
+  icon.foreground: "#757575"
+  sash.hoverBorder: "#4a4a4a"
+  selection.background: "#75757544"
+  widget.shadow: "#2b2b2b44"
+
   activityBar.activeBackground: "#00548b"
   activityBar.activeBorder: "#008dc5"
   activityBar.border: "#4a4a4a"
@@ -83,8 +92,6 @@ colors:
   debugView.stateLabelForeground: "#b4b4b4"
   debugView.valueChangedHighlight: "#ff9f40"
 
-  descriptionForeground: "#757575"
-
   diffEditor.border: "#4a4a4a"
   diffEditor.diagonalFill: "#757575"
   diffEditor.insertedTextBackground: "#00791a5a"
@@ -105,7 +112,6 @@ colors:
   editor.inactiveSelectionBackground: "#4a4a4a77"
   editor.lineHighlightBackground: "#4a4a4a4a"
   editor.lineHighlightBorder: "#4a4a4a77"
-  editor.onTypeRenameBackground: "#ff0000"
   editor.rangeHighlightBackground: "#4a4a4a77"
   editor.selectionBackground: "#84a5b341"
   editor.selectionHighlightBackground: "#84a5b321"
@@ -178,12 +184,12 @@ colors:
   editorOverviewRuler.errorForeground: "#dd3636"
   editorOverviewRuler.findMatchForeground: "#c5944b"
   editorOverviewRuler.incomingContentForeground: "#aa6622"
-  editorOverviewRuler.infoForeground: "#ff0000"
+  editorOverviewRuler.infoForeground: "#4a4a4a"
   editorOverviewRuler.modifiedForeground: "#008dc5"
-  editorOverviewRuler.rangeHighlightForeground: "#ff0000"
+  editorOverviewRuler.rangeHighlightForeground: "#4a4a4a77"
   editorOverviewRuler.selectionHighlightForeground: "#b4b4b4"
   editorOverviewRuler.warningForeground: "#ffcc44"
-  editorOverviewRuler.wordHighlightForeground: "#ff0000"
+  editorOverviewRuler.wordHighlightForeground: "#b4b4b4"
   editorOverviewRuler.wordHighlightStrongForeground: "#b4b4b4"
 
   editorPane.background: "#1a1a1a"
@@ -204,17 +210,12 @@ colors:
   editorWidget.foreground: "#b4b4b4"
   editorWidget.resizeBorder: "#4a4a4a"
 
-  errorForeground: "#ff0000"
 
   extensionBadge.remoteBackground: "#ff0000"
   extensionBadge.remoteForeground: "#ff0000"
   extensionButton.prominentBackground: "#00548b"
   extensionButton.prominentForeground: "#d4d4d4"
   extensionButton.prominentHoverBackground: "#008dc5"
-  extensionButton.prominentHoverForeground: "#d4d4d4"
-
-  focusBorder: "#757575"
-  foreground: "#b4b4b4"
 
   gitDecoration.addedResourceForeground: "#00db2f"
   gitDecoration.conflictingResourceForeground: "#007bcc"
@@ -223,10 +224,9 @@ colors:
   gitDecoration.modifiedResourceForeground: "#ffcc4499"
   gitDecoration.stageDeletedResourceForeground: "#dd3636"
   gitDecoration.stageModifiedResourceForeground: "#ffcc44"
-  gitDecoration.submoduleResourceForeground: "#ff0000"
+  gitDecoration.submoduleResourceForeground: "#b4b4b4"
   gitDecoration.untrackedResourceForeground: "#00db2fc0"
 
-  icon.foreground: "#757575"
   imagePreview.border: "#4a4a4a"
 
   input.background: "#1a1a1a"
@@ -243,13 +243,13 @@ colors:
   inputValidation.infoBackground: "#1a1a1a"
   inputValidation.infoBorder: "#4a4a4a"
   inputValidation.infoForeground: "#b4b4b4"
-  inputValidation.warningBackground: "#ff0000"
+  inputValidation.warningBackground: "#664d18"
   inputValidation.warningBorder: "#ffcc44"
-  inputValidation.warningForeground: "#ff0000"
+  inputValidation.warningForeground: "#b4b4b4"
 
   list.activeSelectionBackground: "#4a4a4a"
   list.activeSelectionForeground: "#d4d4d4"
-  list.deemphasizedForeground: "#ff0000"
+  list.deemphasizedForeground: "#757575"
   list.dropBackground: "#4a4a4a77"
   list.errorForeground: "#c76363"
   list.filterMatchBackground: "#2b2b2b"
@@ -367,8 +367,9 @@ colors:
 
   quickInput.background: "#1a1a1a"
   quickInput.foreground: "#b4b4b4"
-  quickInputTitle.background: "#b4b4b4"
-  scm.providerBorder: "#ff0000"
+  quickInputTitle.background: "#1a1a1a"
+
+  scm.providerBorder: "#ffff00"
 
   scrollbar.shadow: "#2b2b2b"
   scrollbarSlider.activeBackground: "#75757544"
@@ -377,8 +378,6 @@ colors:
 
   searchEditor.findMatchBackground: "#c5944b81"
   searchEditor.textInputBorder: "#4a4a4a"
-
-  selection.background: "#75757544"
 
   settings.checkboxBackground: "#1a1a1a"
   settings.checkboxBorder: "#4a4a4a"
@@ -429,19 +428,19 @@ colors:
   symbolIcon.colorForeground: "#00ff22"
   symbolIcon.constantForeground: "#86B5E3"
   symbolIcon.constructorForeground: "#b17ed7"
-  symbolIcon.enumeratorForeground: "#FFEB60"
-  symbolIcon.enumeratorMemberForeground: "#C4E49A"
+  symbolIcon.enumeratorForeground: "#ffeb60"
+  symbolIcon.enumeratorMemberForeground: "#c4e49a"
   symbolIcon.eventForeground: "#bb6600"
   symbolIcon.fieldForeground: "#c7529e"
   symbolIcon.fileForeground: "#ff0000"
   symbolIcon.folderForeground: "#ff0000"
-  symbolIcon.functionForeground: "#86B5E3"
-  symbolIcon.interfaceForeground: "#FFEB60"
+  symbolIcon.functionForeground: "#86b5e3"
+  symbolIcon.interfaceForeground: "#ffeb60"
   symbolIcon.keyForeground: "#ff0000"
-  symbolIcon.keywordForeground: "#DF75DF"
-  symbolIcon.methodForeground: "#86B5E3"
-  symbolIcon.moduleForeground: "#FFEB60"
-  symbolIcon.namespaceForeground: "#FFEB60"
+  symbolIcon.keywordForeground: "#df75df"
+  symbolIcon.methodForeground: "#86b5e3"
+  symbolIcon.moduleForeground: "#ffeb60"
+  symbolIcon.namespaceForeground: "#ffeb60"
   symbolIcon.nullForeground: "#DF75DF"
   symbolIcon.numberForeground: "#FF9F40"
   symbolIcon.objectForeground: "#ff0000"
@@ -522,12 +521,11 @@ colors:
   welcomePage.buttonBackground: "#2b2b2b"
   welcomePage.buttonHoverBackground: "#4a4a4a77"
 
-  widget.shadow: "#2b2b2b44"
 
 semanticHighlighting: true
 semanticTokenColors:
   variable.global: "#5972BB"
-  variable.local: "#C25412"
+  variable.local: "#b14301"
   class: "#FFEB60"
   comment: "#627373"
   controlKeyword: "#DF75DF"
@@ -540,13 +538,13 @@ semanticTokenColors:
   label:
     foreground: "#C8C8C8"
     fontStyle: bold
-  local: "#C25412"
+  local: "#b14301"
   macro:
     foreground: "#86B5E3"
     fontStyle: bold
-  member: "#86B5E3"
   memberOperatorOverload: "#D4D4D4"
   member.static: "#86B5E3"
+  method: "#86B5E3"
   namespace: "#FFEB60"
   newOperator: "#86B5E3"
   number: "#FF9F40"
@@ -998,7 +996,7 @@ tokenColors:
       - variable.other.global
       - entity.name.variable.local
     settings:
-      foreground: "#C25412"
+      foreground: "#b14301"
   -
     name: Macros
     scope:
@@ -1067,7 +1065,7 @@ tokenColors:
       - variable.other.property.static
     settings:
       foreground: "#F748BA"
-    fontStyle : bold
+      fontStyle : bold
   -
     name: Types
     scope:
@@ -1160,3 +1158,13 @@ tokenColors:
     settings:
       foreground: "#FBB840"
       fontStyle : ""
+#####################################################################
+# Python (.py)
+#####################################################################
+  -
+    name: Python parameters
+    scope:
+      - source.python meta.function-call variable.paramater.function-call
+    settings:
+      foreground: "#00FFFF"
+      fontStyle : bold

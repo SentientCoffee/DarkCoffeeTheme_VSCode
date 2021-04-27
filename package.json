@@ -3,16 +3,16 @@
     "displayName": "Dark Coffee",
     "description": "Custom VS Code Theme",
     "publisher": "SentientCoffee",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "engines": {
         "vscode": "^1.50.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/DanielPresas/vscode-theme"
+        "url": "https://github.com/SentientCoffee/DarkCoffeeTheme_VSCode"
     },
     "bugs": {
-        "url": "https://github.com/DanielPresas/vscode-theme/issues"
+        "url": "https://github.com/SentientCoffee/DarkCoffeeTheme_VSCode/issues"
     },
     "galleryBanner": {
         "color": "#1a1a1a",
