@@ -153,8 +153,8 @@
     "editorIndentGuide.activeBackground": "#757575",
     "editorIndentGuide.background": "#4a4a4a",
     "editorInfo.foreground": "#00db30",
-    "editorInfo.background": "#0000",
-    "editorInfo.border": "#0000",
+    "editorInfo.background": "#00000000",
+    "editorInfo.border": "#00000000",
     "editorInlineHint.background": "#ff00ff",
     "editorInlineHint.foreground": "#ff00ff",
     "editorLightBulb.foreground": "#ffaa44",
@@ -193,8 +193,8 @@
     "editorUnnecessaryCode.opacity": "#00000060",
     "editorUnnecessaryCode.border": "#00000000",
     "editorWarning.foreground": "#ffcc44",
-    "editorWarning.background": "#0000",
-    "editorWarning.border": "#0000",
+    "editorWarning.background": "#00000000",
+    "editorWarning.border": "#00000000",
     "editorWhitespace.foreground": "#4a4a4a",
     "editorWidget.background": "#1a1a1a",
     "editorWidget.border": "#4a4a4a",
@@ -243,7 +243,7 @@
     "list.dropBackground": "#4a4a4a77",
     "list.errorForeground": "#c76363",
     "list.filterMatchBackground": "#2b2b2b",
-    "list.filterMatchBorder": "#ff00ff",
+    "list.filterMatchBorder": "#00000000",
     "list.focusBackground": "#2b2b2b",
     "list.focusForeground": "#b4b4b4",
     "list.focusOutline": "#00000000",
@@ -335,7 +335,7 @@
     "peekView.border": "#4a4a4a",
     "peekViewEditor.background": "#232323",
     "peekViewEditor.matchHighlightBackground": "#c5944b81",
-    "peekViewEditor.matchHighlightBorder": "#ff00ff",
+    "peekViewEditor.matchHighlightBorder": "#00000000",
     "peekViewEditorGutter.background": "#232323",
     "peekViewResult.background": "#1a1a1a",
     "peekViewResult.fileForeground": "#b4b4b4",
@@ -560,16 +560,10 @@
     "numberLiteral": "#FF9F40",
     "operator": "#D4D4D4",
     "operatorOverloaded": "#D4D4D4",
-    "parameter": {
-      "foreground": "#00FFFF",
-      "fontStyle": "bold"
-    },
+    "parameter": "#00FFFF",
     "plainKeyword": "#DF75DF",
     "property": "#C7529E",
-    "property.static": {
-      "foreground": "#F748BA",
-      "fontStyle": "bold"
-    },
+    "property.static": "#F748BA",
     "string": "#B8E272",
     "stringLiteral": "#B8E272",
     "stringVerbatim": "#B8E272",
@@ -1252,8 +1246,7 @@
         "entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#00FFFF",
-        "fontStyle": "bold"
+        "foreground": "#00FFFF"
       }
     },
     {
@@ -1262,8 +1255,7 @@
         "variable.other.property.static"
       ],
       "settings": {
-        "foreground": "#F748BA",
-        "fontStyle": "bold"
+        "foreground": "#F748BA"
       }
     },
     {
@@ -1378,16 +1370,6 @@
       "settings": {
         "foreground": "#FBB840",
         "fontStyle": ""
-      }
-    },
-    {
-      "name": "Python parameters",
-      "scope": [
-        "source.python meta.function-call variable.paramater.function-call"
-      ],
-      "settings": {
-        "foreground": "#00FFFF",
-        "fontStyle": "bold"
       }
     }
   ]
