@@ -38,6 +38,7 @@ colors:
   breadcrumbPicker.background         : "#1a1a1a"
 
   button.background              : "#00548b"
+  button.border                  : "#ff00ff"
   button.foreground              : "#eeeeee"
   button.hoverBackground         : "#008dc5"
   button.secondaryBackground     : "#ff00ff"
@@ -288,6 +289,11 @@ colors:
   issues.newIssueDecoration: "#009b22"
   issues.open              : "#009b22"
 
+  keybindingLabel.background  : "#2b2b2b"
+  keybindingLabel.border      : "#00000000"
+  keybindingLabel.bottomBorder: "#757575"
+  keybindingLabel.foreground  : "#b4b4b4"
+
   list.activeSelectionBackground  : "#4a4a4a"
   list.activeSelectionForeground  : "#d4d4d4"
   list.deemphasizedForeground     : "#757575"
@@ -415,6 +421,8 @@ colors:
 
   pickerGroup.border    : "#757575"
   pickerGroup.foreground: "#d4d4d4"
+
+  ports.iconRunningProcessForeground: "#ff00ff"
 
   problemsErrorIcon.foreground  : "#dd3636"
   problemsInfoIcon.foreground   : "#757575"
@@ -596,6 +604,10 @@ colors:
   titleBar.inactiveBackground: "#1f1f1f"
   titleBar.inactiveForeground: "#757575"
 
+  toolbar.activeBackground: "#757575"
+  toolbar.hoverBackground : "#4a4a4a"
+  toolbar.hoverOutline    : "#00000000"
+
   tree.indentGuidesStroke: "#757575"
   tree.tableColumnsBorder: "#00000000"
 
@@ -613,9 +625,9 @@ colors:
   window.activeBorder  : "#00000000"
   window.inactiveBorder: "#00000000"
 
-  workspaceTrust.trustedForergound  : "#ff00ff"
+  workspaceTrust.trustedForegound   : "#ff00ff"
   workspaceTrust.untrustedForeground: "#ff00ff"
-
+  workspaceTrust.tileBackground     : "#ff00ff"
 
 semanticHighlighting: true
 semanticTokenColors:
