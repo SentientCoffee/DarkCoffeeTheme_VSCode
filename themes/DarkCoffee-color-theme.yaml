@@ -31,6 +31,10 @@ colors:
   badge.background: "#00548b"
   badge.foreground: "#eeeeee"
 
+  banner.background                           : "#ff00ff"
+  banner.foreground                           : "#ff00ff"
+  banner.iconForeground                       : "#ff00ff"
+
   breadcrumb.activeSelectionForeground: "#b4b4b4"
   breadcrumb.background               : "#1a1a1a"
   breadcrumb.focusForeground          : "#b4b4b4"
@@ -38,12 +42,12 @@ colors:
   breadcrumbPicker.background         : "#1a1a1a"
 
   button.background              : "#00548b"
-  button.border                  : "#ff00ff"
   button.foreground              : "#eeeeee"
+  button.border                  : "#00000000"
   button.hoverBackground         : "#008dc5"
-  button.secondaryBackground     : "#ff00ff"
-  button.secondaryForeground     : "#ff00ff"
-  button.secondaryHoverBackground: "#ff00ff"
+  button.secondaryBackground     : "#00548b"
+  button.secondaryForeground     : "#eeeeee"
+  button.secondaryHoverBackground: "#008dc5"
 
   charts.blue      : "#ff00ff"
   charts.foreground: "#ff00ff"
@@ -125,6 +129,8 @@ colors:
   editor.foldBackground                        : "#1a1a1a1a"
   editor.hoverHighlightBackground              : "#4a4a4a4a"
   editor.inactiveSelectionBackground           : "#4a4a4a77"
+  editor.inlineValuesBackground                : "#ff00ff"
+  editor.inlineValuesForeground                : "#ff00ff"
   editor.lineHighlightBackground               : "#4a4a4a4a"
   editor.lineHighlightBorder                   : "#4a4a4a77"
   editor.linkedEditingBackground               : "#ff00ff"
@@ -140,7 +146,7 @@ colors:
   editor.snippetTabstopHighlightBorder         : "#00000000"
   editor.stackFrameHighlightBackground         : "#dd363688"
   editor.symbolHighlightBackground             : "#4a4a4a77"
-  editor.symbolHighlightBorder                 : "#ff00ff"
+  editor.symbolHighlightBorder                 : "#00000000"
   editor.wordHighlightBackground               : "#4a4a4a77"
   editor.wordHighlightBorder                   : "#00000000"
   editor.wordHighlightStrongBackground         : "#4a4a4a77"
@@ -157,6 +163,9 @@ colors:
   editorError.background: "#00000000"
   editorError.border    : "#00000000"
   editorError.foreground: "#dd3636"
+
+  editorGhostText.border    : "#ff00ff"
+  editorGhostText.foreground: "#ff00ff"
 
   editorGroup.border                : "#4a4a4a"
   editorGroup.dropBackground        : "#4a4a4a77"
@@ -189,8 +198,8 @@ colors:
   editorInfo.background: "#00000000"
   editorInfo.border    : "#00000000"
 
-  editorInlineHint.background: "#ff00ff"
-  editorInlineHint.foreground: "#ff00ff"
+  editorInlayHint.background: "#ff00ff"
+  editorInlayHint.foreground: "#ff00ff"
 
   editorLightBulb.foreground       : "#ffaa44"
   editorLightBulbAutoFix.foreground: "#ffaa44"
@@ -226,11 +235,13 @@ colors:
   editorPane.background : "#1a1a1a"
   editorRuler.foreground: "#2b2b2b"
 
-  editorSuggestWidget.background         : "#1a1a1a"
-  editorSuggestWidget.border             : "#4a4a4a"
-  editorSuggestWidget.foreground         : "#b4b4b4"
-  editorSuggestWidget.highlightForeground: "#d4d4d4"
-  editorSuggestWidget.selectedBackground : "#4a4a4a"
+  editorSuggestWidget.background              : "#1a1a1a"
+  editorSuggestWidget.border                  : "#4a4a4a"
+  editorSuggestWidget.foreground              : "#b4b4b4"
+  editorSuggestWidget.focusHighlightForeground: "#ff00ff"
+  editorSuggestWidget.highlightForeground     : "#d4d4d4"
+  editorSuggestWidget.selectedBackground      : "#4a4a4a"
+  editorSuggestWidget.selectedForeground      : "#ff00ff"
 
   editorUnnecessaryCode.opacity: "#00000060"
   editorUnnecessaryCode.border : "#00000000"
@@ -263,8 +274,6 @@ colors:
   gitDecoration.stageModifiedResourceForeground: "#ffcc44"
   gitDecoration.submoduleResourceForeground    : "#b4b4b4"
   gitDecoration.untrackedResourceForeground    : "#00db2fc0"
-
-  imagePreview.border: "#4a4a4a"
 
   inlineTitleBar.background: "#ff00ff"
 
@@ -303,6 +312,7 @@ colors:
   list.filterMatchBorder          : "#00000000"
   list.focusBackground            : "#2b2b2b"
   list.focusForeground            : "#b4b4b4"
+  list.focusHighlightForeground   : "#ff00ff"
   list.focusOutline               : "#00000000"
   list.highlightForeground        : "#d4d4d4"
   list.hoverBackground            : "#2b2b2b"
@@ -351,6 +361,7 @@ colors:
   minimapSlider.hoverBackground   : "#75757544"
 
   notebook.cellBorderColor                 : "#b4b4b4"
+  notebook.cellEditorBackground            : "#ff00ff"
   notebook.cellHoverBackground             : "#ff00ff"
   notebook.cellInsertionIndicator          : "#ff00ff"
   notebook.cellStatusBarItemHoverBackground: "#ff00ff"
@@ -433,6 +444,7 @@ colors:
   quickInput.background         : "#1a1a1a"
   quickInput.foreground         : "#b4b4b4"
   quickInputList.focusBackground: "#2b2b2b"
+  quickInputList.focusForeground: "#d4d4d4"
   quickInputTitle.background    : "#1a1a1a"
 
   scm.providerBorder: "#ffff00"
@@ -568,6 +580,7 @@ colors:
   terminal.ansiYellow         : "#cccc00"
   terminal.background         : "#1a1a1a"
   terminal.border             : "#4a4a4a"
+  terminal.dropBackground     : "#ff00ff"
   terminal.foreground         : "#d4d4d4"
   terminal.selectionBackground: "#b4b4b488"
   terminalCursor.background   : "#eeeeee"
@@ -625,23 +638,21 @@ colors:
   window.activeBorder  : "#00000000"
   window.inactiveBorder: "#00000000"
 
-  workspaceTrust.trustedForegound   : "#ff00ff"
-  workspaceTrust.untrustedForeground: "#ff00ff"
-  workspaceTrust.tileBackground     : "#ff00ff"
-
 semanticHighlighting: true
 semanticTokenColors:
-  variable.global: "#5972BB"
-  variable.local : "#b14301"
-  class          : "#FFEB60"
-  comment        : "#627373"
-  controlKeyword : "#DF75DF"
-  customLiteral  : "#B8E272"
-  enum           : "#FFEB60"
-  enumMember     : "#C4E49A"
-  field          : "#C7529E"
-  field.static   : "#F748BA"
-  function       : "#82B7E1"
+  variable.readonly: "#5972BB"
+  variable.global  : "#5972BB"
+  variable.local   : "#b14301"
+  class            : "#FFEB60"
+  comment          : "#627373"
+  controlKeyword   : "#DF75DF"
+  customLiteral    : "#B8E272"
+  enum             : "#FFEB60"
+  enumMember       : "#C4E49A"
+  field            : "#C7529E"
+  field.static     : "#F748BA"
+  function         : "#82B7E1"
+  interface        : "#FFEB60"
   label:
     foreground: "#C8C8C8"
     fontStyle : bold
