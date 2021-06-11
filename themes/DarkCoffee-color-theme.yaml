@@ -1271,5 +1271,18 @@ tokenColors:
       foreground: "#FBB840"
       fontStyle : ""
 #####################################################################
-# Shellscript (.sh)
+# Odin (.odin)
 #####################################################################
+  -
+    name: Keywords and storage types
+    scope:
+      - keyword.operator.odin
+      - storage.type.odin
+    settings:
+      foreground: "#DF75DF"
+  -
+    name: Tag keywords
+    scope:
+      - keyword.tag.odin
+    settings:
+      foreground: "#FBB840"
