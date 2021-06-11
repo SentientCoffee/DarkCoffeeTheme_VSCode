@@ -31,9 +31,9 @@ colors:
   badge.background: "#00548b"
   badge.foreground: "#eeeeee"
 
-  banner.background                           : "#ff00ff"
-  banner.foreground                           : "#ff00ff"
-  banner.iconForeground                       : "#ff00ff"
+  banner.background    : "#4a4a4a"
+  banner.foreground    : "#d4d4d4"
+  banner.iconForeground: "#b4b4b4"
 
   breadcrumb.activeSelectionForeground: "#b4b4b4"
   breadcrumb.background               : "#1a1a1a"
@@ -58,9 +58,9 @@ colors:
   charts.red       : "#ff00ff"
   charts.yellow    : "#ff00ff"
 
-  checkbox.background: "#ff00ff"
-  checkbox.border    : "#ff00ff"
-  checkbox.foreground: "#ff00ff"
+  checkbox.background: "#4a4a4a"
+  checkbox.border    : "#4a4a4a"
+  checkbox.foreground: "#d4d4d4"
 
   dart.closingLabels: "#757575"
 
@@ -312,7 +312,7 @@ colors:
   list.filterMatchBorder          : "#00000000"
   list.focusBackground            : "#2b2b2b"
   list.focusForeground            : "#b4b4b4"
-  list.focusHighlightForeground   : "#ff00ff"
+  list.focusHighlightForeground   : "#eeeeee"
   list.focusOutline               : "#00000000"
   list.highlightForeground        : "#d4d4d4"
   list.hoverBackground            : "#2b2b2b"
@@ -497,9 +497,9 @@ colors:
   statusBarItem.errorBackground         : "#ff00ff"
   statusBarItem.errorForeground         : "#ff00ff"
   statusBarItem.hoverBackground         : "#ffffff33"
-  statusBarItem.prominentBackground     : "#ff00ff"
-  statusBarItem.prominentForeground     : "#ff00ff"
-  statusBarItem.prominentHoverBackground: "#ff00ff"
+  statusBarItem.prominentBackground     : "#4a4a4a"
+  statusBarItem.prominentForeground     : "#d4d4d4"
+  statusBarItem.prominentHoverBackground: "#ffffff33"
   statusBarItem.remoteBackground        : "#ff00ff"
   statusBarItem.remoteForeground        : "#ff00ff"
 
