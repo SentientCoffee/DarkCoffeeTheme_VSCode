@@ -38,7 +38,7 @@
                 "label": "VSCE Package",
                 "type": "shell",
                 "group": "build",
-                "command": "vsce package",
+                "command": "vsce package patch",
                 "options": {
                     "cwd": "${workspaceFolder}",
                 },
