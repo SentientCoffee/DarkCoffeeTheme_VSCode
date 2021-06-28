@@ -1,5 +1,7 @@
 #
-# Terminal command: npx js-yaml themes\DarkCoffee-color-theme.yaml > themes\DarkCoffee-color-theme.json
+# Convert yaml to json: npx js-yaml themes\DarkCoffee-color-theme.yaml > themes\DarkCoffee-color-theme.json
+# Package vscode extension: vsce package
+# Install extension: code --install-extension dark-coffee-theme-<version>.vsix
 #
 name: Dark Coffee
 type: dark
@@ -129,8 +131,8 @@ colors:
   editor.foldBackground                        : "#1a1a1a1a"
   editor.hoverHighlightBackground              : "#4a4a4a4a"
   editor.inactiveSelectionBackground           : "#4a4a4a77"
-  editor.inlineValuesBackground                : "#ff00ff"
-  editor.inlineValuesForeground                : "#ff00ff"
+  editor.inlineValuesBackground                : "#4a4a4a77"
+  editor.inlineValuesForeground                : "#b4b4b4"
   editor.lineHighlightBackground               : "#4a4a4a4a"
   editor.lineHighlightBorder                   : "#4a4a4a77"
   editor.linkedEditingBackground               : "#ff00ff"
@@ -238,10 +240,10 @@ colors:
   editorSuggestWidget.background              : "#1a1a1a"
   editorSuggestWidget.border                  : "#4a4a4a"
   editorSuggestWidget.foreground              : "#b4b4b4"
-  editorSuggestWidget.focusHighlightForeground: "#ff00ff"
-  editorSuggestWidget.highlightForeground     : "#d4d4d4"
+  editorSuggestWidget.focusHighlightForeground: "#eeeeee"
+  editorSuggestWidget.highlightForeground     : "#b4b4b4"
   editorSuggestWidget.selectedBackground      : "#4a4a4a"
-  editorSuggestWidget.selectedForeground      : "#ff00ff"
+  editorSuggestWidget.selectedForeground      : "#d4d4d4"
 
   editorUnnecessaryCode.opacity: "#00000060"
   editorUnnecessaryCode.border : "#00000000"
@@ -505,9 +507,9 @@ colors:
 
   symbolIcon.arrayForeground           : "#b4b4b4"
   symbolIcon.booleanForeground         : "#d69ad6"
-  symbolIcon.classForeground           : "#FFEB60"
+  symbolIcon.classForeground           : "#ffeb60"
   symbolIcon.colorForeground           : "#757575"
-  symbolIcon.constantForeground        : "#86B5E3"
+  symbolIcon.constantForeground        : "#86b5e3"
   symbolIcon.constructorForeground     : "#b17ed7"
   symbolIcon.enumeratorForeground      : "#ffeb60"
   symbolIcon.enumeratorMemberForeground: "#c4e49a"
@@ -522,16 +524,16 @@ colors:
   symbolIcon.methodForeground          : "#86b5e3"
   symbolIcon.moduleForeground          : "#ffeb60"
   symbolIcon.namespaceForeground       : "#ffeb60"
-  symbolIcon.nullForeground            : "#DF75DF"
-  symbolIcon.numberForeground          : "#FF9F40"
+  symbolIcon.nullForeground            : "#df75df"
+  symbolIcon.numberForeground          : "#ff9f40"
   symbolIcon.objectForeground          : "#ff00ff"
   symbolIcon.operatorForeground        : "#d4d4d4"
-  symbolIcon.packageForeground         : "#ff00ff"
+  symbolIcon.packageForeground         : "#fbb840"
   symbolIcon.propertyForeground        : "#d4d4d4"
   symbolIcon.referenceForeground       : "#ff00ff"
-  symbolIcon.snippetForeground         : "#86B5E3"
-  symbolIcon.stringForeground          : "#B8E272"
-  symbolIcon.structForeground          : "#FFEB60"
+  symbolIcon.snippetForeground         : "#86b5e3"
+  symbolIcon.stringForeground          : "#b8e272"
+  symbolIcon.structForeground          : "#ffeb60"
   symbolIcon.textForeground            : "#b4b4b4"
   symbolIcon.typeParameterForeground   : "#ff00ff"
   symbolIcon.unitForeground            : "#ff00ff"
@@ -580,7 +582,7 @@ colors:
   terminal.ansiYellow         : "#cccc00"
   terminal.background         : "#1a1a1a"
   terminal.border             : "#4a4a4a"
-  terminal.dropBackground     : "#ff00ff"
+  terminal.dropBackground     : "#4a4a4a77"
   terminal.foreground         : "#d4d4d4"
   terminal.selectionBackground: "#b4b4b488"
   terminalCursor.background   : "#eeeeee"

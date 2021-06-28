@@ -1,7 +1,7 @@
 {
     "name": "dark-coffee-theme",
     "displayName": "Dark Coffee",
-    "description": "Custom VS Code Theme",
+    "description": "Custom VSCode theme",
     "publisher": "SentientCoffee",
     "version": "0.0.15",
     "engines": {

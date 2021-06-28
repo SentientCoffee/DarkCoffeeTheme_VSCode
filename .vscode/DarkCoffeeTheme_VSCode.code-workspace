@@ -1,0 +1,56 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "launch" : {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Extension",
+                "type": "extensionHost",
+                "request": "launch",
+                "preLaunchTask": "Update colors",
+                "args": [
+                    "--extensionDevelopmentPath=${workspaceFolder}"
+                ]
+            }
+        ]
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Update colors",
+                "type": "shell",
+                "group": {
+                    "kind": "build",
+                    "isDefault": true
+                },
+                "command": "npx js-yaml themes\\DarkCoffee-color-theme.yaml > themes\\DarkCoffee-color-theme.json",
+                "options": {
+                    "cwd": "${workspaceFolder}",
+                },
+                "problemMatcher": [],
+            },
+            {
+                "label": "VSCE Package",
+                "type": "shell",
+                "group": "build",
+                "command": "vsce package",
+                "options": {
+                    "cwd": "${workspaceFolder}",
+                },
+                "problemMatcher": [],
+            },
+            {
+                "label": "Install Extension",
+                "type": "shell",
+                "command": "echo Hello",
+                "problemMatcher": []
+            }
+        ]
+    },
+    "settings": {}
+}
