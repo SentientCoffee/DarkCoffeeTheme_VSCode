@@ -35,21 +35,15 @@
                 "problemMatcher": [],
             },
             {
-                "label": "VSCE Package",
+                "label": "Package and install",
                 "type": "shell",
                 "group": "build",
-                "command": "vsce package patch",
+                "command": "del dark-coffee-theme-* && vsce package patch && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do code --install-extension %i",
                 "options": {
                     "cwd": "${workspaceFolder}",
                 },
                 "problemMatcher": [],
             },
-            {
-                "label": "Install Extension",
-                "type": "shell",
-                "command": "echo Hello",
-                "problemMatcher": []
-            }
         ]
     },
     "settings": {}
