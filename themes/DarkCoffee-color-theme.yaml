@@ -157,6 +157,14 @@ colors:
   editorBracketMatch.background: "#1a1a1a"
   editorBracketMatch.border    : "#b4b4b4"
 
+  editorBracketHighlight.foreground1: "#d4d4d4"
+  editorBracketHighlight.foreground2: "#86b5e3"
+  editorBracketHighlight.foreground3: "#b14301"
+  editorBracketHighlight.foreground4: "#b8e272"
+  editorBracketHighlight.foreground5: "#ffeb60"
+  editorBracketHighlight.foreground6: "#df75df"
+  editorBracketHighlight.unexpectedBracket.foreground: "#dd363677"
+
   editorCodeLens.foreground: "#757575"
 
   editorCursor.background: "#d4d4d44a"
@@ -211,10 +219,13 @@ colors:
 
   editorLink.activeForeground: "#008dc5"
 
-  editorMarkerNavigation.background       : "#232323"
-  editorMarkerNavigationError.background  : "#dd3636"
-  editorMarkerNavigationInfo.background   : "#4a4a4a"
-  editorMarkerNavigationWarning.background: "#ffcc44"
+  editorMarkerNavigation.background             : "#232323"
+  editorMarkerNavigationError.background        : "#dd3636"
+  editorMarkerNavigationError.headerBackground  : "#440303"
+  editorMarkerNavigationInfo.background         : "#4a4a4a"
+  editorMarkerNavigationInfo.headerBackground   : "#2b2b2b"
+  editorMarkerNavigationWarning.background      : "#ffcc44"
+  editorMarkerNavigationWarning.headerBackground: "#664d18"
 
   editorOverviewRuler.addedForeground              : "#00791a"
   editorOverviewRuler.background                   : "#1a1a1a"
@@ -244,6 +255,7 @@ colors:
   editorSuggestWidget.highlightForeground     : "#b4b4b4"
   editorSuggestWidget.selectedBackground      : "#4a4a4a"
   editorSuggestWidget.selectedForeground      : "#d4d4d4"
+  editorSuggestWidget.selectedIconForeground  : "#d4d4d4"
 
   editorUnnecessaryCode.opacity: "#00000060"
   editorUnnecessaryCode.border : "#00000000"
@@ -296,6 +308,9 @@ colors:
   inputValidation.warningBorder    : "#ffcc44"
   inputValidation.warningForeground: "#b4b4b4"
 
+  interactive.activeCodeBorder  : "#ff00ff"
+  interactive.inactiveCodeBorder: "#ff00ff"
+
   issues.closed            : "#dd3636"
   issues.newIssueDecoration: "#009b22"
   issues.open              : "#009b22"
@@ -305,26 +320,28 @@ colors:
   keybindingLabel.bottomBorder: "#757575"
   keybindingLabel.foreground  : "#b4b4b4"
 
-  list.activeSelectionBackground  : "#4a4a4a"
-  list.activeSelectionForeground  : "#d4d4d4"
-  list.deemphasizedForeground     : "#757575"
-  list.dropBackground             : "#4a4a4a77"
-  list.errorForeground            : "#c76363"
-  list.filterMatchBackground      : "#2b2b2b"
-  list.filterMatchBorder          : "#00000000"
-  list.focusBackground            : "#2b2b2b"
-  list.focusForeground            : "#b4b4b4"
-  list.focusHighlightForeground   : "#eeeeee"
-  list.focusOutline               : "#00000000"
-  list.highlightForeground        : "#d4d4d4"
-  list.hoverBackground            : "#2b2b2b"
-  list.hoverForeground            : "#b4b4b4"
-  list.inactiveFocusBackground    : "#2b2b2b"
-  list.inactiveFocusOutline       : "#00000000"
-  list.inactiveSelectionBackground: "#4a4a4a"
-  list.inactiveSelectionForeground: "#d4d4d4"
-  list.invalidItemForeground      : "#ff00ff"
-  list.warningForeground          : "#d8b860"
+  list.activeSelectionBackground      : "#4a4a4a"
+  list.activeSelectionForeground      : "#d4d4d4"
+  list.activeSelectionIconForeground  : "#d4d4d4"
+  list.deemphasizedForeground         : "#757575"
+  list.dropBackground                 : "#4a4a4a77"
+  list.errorForeground                : "#c76363"
+  list.filterMatchBackground          : "#2b2b2b"
+  list.filterMatchBorder              : "#00000000"
+  list.focusBackground                : "#2b2b2b"
+  list.focusForeground                : "#b4b4b4"
+  list.focusHighlightForeground       : "#eeeeee"
+  list.focusOutline                   : "#00000000"
+  list.highlightForeground            : "#d4d4d4"
+  list.hoverBackground                : "#2b2b2b"
+  list.hoverForeground                : "#b4b4b4"
+  list.inactiveFocusBackground        : "#2b2b2b"
+  list.inactiveFocusOutline           : "#00000000"
+  list.inactiveSelectionBackground    : "#2b2b2b"
+  list.inactiveSelectionForeground    : "#d4d4d4"
+  list.inactiveSelectionIconForeground: "#b4b4b4"
+  list.invalidItemForeground          : "#ff00ff"
+  list.warningForeground              : "#d8b860"
 
   listFilterWidget.background      : "#2b2b2b"
   listFilterWidget.noMatchesOutline: "#dd3636"
@@ -441,11 +458,12 @@ colors:
 
   progressBar.background: "#b4b4b4"
 
-  quickInput.background         : "#1a1a1a"
-  quickInput.foreground         : "#b4b4b4"
-  quickInputList.focusBackground: "#2b2b2b"
-  quickInputList.focusForeground: "#d4d4d4"
-  quickInputTitle.background    : "#1a1a1a"
+  quickInput.background             : "#1a1a1a"
+  quickInput.foreground             : "#b4b4b4"
+  quickInputList.focusBackground    : "#2b2b2b"
+  quickInputList.focusForeground    : "#d4d4d4"
+  quickInputList.focusIconForeground: "#d4d4d4"
+  quickInputTitle.background        : "#1a1a1a"
 
   scm.providerBorder: "#ffff00"
 
@@ -504,6 +522,8 @@ colors:
   statusBarItem.prominentHoverBackground: "#ffffff33"
   statusBarItem.remoteBackground        : "#ff00ff"
   statusBarItem.remoteForeground        : "#ff00ff"
+  statusBarItem.warningBackground       : "#ff00ff"
+  statusBarItem.warningForeground       : "#ff00ff"
 
   symbolIcon.arrayForeground           : "#b4b4b4"
   symbolIcon.booleanForeground         : "#d69ad6"
@@ -585,6 +605,7 @@ colors:
   terminal.dropBackground     : "#4a4a4a77"
   terminal.foreground         : "#d4d4d4"
   terminal.selectionBackground: "#b4b4b488"
+  terminal.tab.activeBorder   : "#d4d4d4"
   terminalCursor.background   : "#eeeeee"
   terminalCursor.foreground   : "#757575"
 
@@ -596,22 +617,19 @@ colors:
   textPreformat.foreground : "#eeeeee"
   textSeparator.foreground : "#ff00ff"
 
-  testing.iconErrored                         : "#ff00ff"
-  testing.iconFailed                          : "#ff00ff"
-  testing.iconPassed                          : "#ff00ff"
-  testing.iconQueued                          : "#ff00ff"
-  testing.iconSkipped                         : "#ff00ff"
-  testing.iconUnset                           : "#ff00ff"
-  testing.message.error.decorationForeground  : "#ff00ff"
-  testing.message.error.lineBackground        : "#ff00ff"
-  testing.message.hint.decorationForeground   : "#ff00ff"
-  testing.message.hint.lineBackground         : "#ff00ff"
-  testing.message.info.decorationForeground   : "#ff00ff"
-  testing.message.info.lineBackground         : "#ff00ff"
-  testing.message.warning.decorationForeground: "#ff00ff"
-  testing.message.warning.lineBackground      : "#ff00ff"
-  testing.peekBorder                          : "#ff00ff"
-  testing.runAction                           : "#ff00ff"
+  testing.iconErrored                       : "#ff00ff"
+  testing.iconFailed                        : "#ff00ff"
+  testing.iconPassed                        : "#ff00ff"
+  testing.iconQueued                        : "#ff00ff"
+  testing.iconSkipped                       : "#ff00ff"
+  testing.iconUnset                         : "#ff00ff"
+  testing.message.error.decorationForeground: "#ff00ff"
+  testing.message.error.lineBackground      : "#ff00ff"
+  testing.message.info.decorationForeground : "#ff00ff"
+  testing.message.info.lineBackground       : "#ff00ff"
+  testing.peekBorder                        : "#ff00ff"
+  testing.peekHeaderBackground              : "#ff00ff"
+  testing.runAction                         : "#ff00ff"
 
   titleBar.activeBackground  : "#1a1a1a"
   titleBar.activeForeground  : "#d4d4d4"
@@ -651,6 +669,7 @@ semanticTokenColors:
   customLiteral    : "#B8E272"
   enum             : "#FFEB60"
   enumMember       : "#C4E49A"
+  enummember       : "#C4E49A"
   field            : "#C7529E"
   field.static     : "#F748BA"
   function         : "#82B7E1"
@@ -914,6 +933,7 @@ tokenColors:
       - markup.inline.raw.string.markdown
     settings:
       foreground: "#eeeeee"
+      fontStyle: "bold"
   -
     name: Markup italic
     scope:
@@ -973,7 +993,7 @@ tokenColors:
       - meta.link.reference.markdown punctuation.definition.string.begin.markdown
       - meta.link.reference.markdown punctuation.definition.string.end.markdown
     settings:
-      foreground: "#FFCB6B"
+      foreground: "#ffcb6b"
   -
     name: Markup - Underline
     scope:
@@ -986,7 +1006,7 @@ tokenColors:
     scope:
       - markup.quote punctuation.definition.blockquote.markdown
     settings:
-      foreground: "#65737E"
+      foreground: "#65737e"
   -
     name: Markup - Quote
     scope:
@@ -1009,10 +1029,11 @@ tokenColors:
     name: Markdown - Fenced Code Block Variable
     scope:
       - markup.raw.block.fenced.markdown
+      - markup.fenced_code.block.markdown
       - variable.language.fenced.markdown
       - punctuation.section.class.end
     settings:
-      foreground: "#EEFFFF"
+      foreground: "#eeeeee"
   -
     name: Markdown - Fenced Language
     scope:
@@ -1024,18 +1045,18 @@ tokenColors:
     scope:
       - meta.separator
     settings:
-      fontStyle : bold
-      foreground: "#65737E"
+      fontStyle : bold underline
+      foreground: "#008DC5"
   -
     name: Markup - Table
     scope:
       - markup.table
     settings:
       foreground: "#EEFFFF"
-  -
 ##########################################################
 # C++ (.cpp)
 ##########################################################
+  -
     name: C++ Class Template
     scope:
       - entity.name.type.class.templated
