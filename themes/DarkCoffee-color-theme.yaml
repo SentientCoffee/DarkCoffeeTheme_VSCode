@@ -1205,8 +1205,9 @@ tokenColors:
     name: Types
     scope:
       - entity.name.type
+      - entity.name.struct
       - entity.name.type.class
-      - entity.name.type.class
+      - entity.name.type.struct
       - entity.name.type.enum
       - markup.changed.git_gutter
       - meta.use.php
@@ -1309,3 +1310,70 @@ tokenColors:
       - keyword.tag.odin
     settings:
       foreground: "#FBB840"
+#####################################################################
+# JAI (.jai)
+#####################################################################
+  -
+    name: Storage types
+    scope:
+      - storage.type.jai
+      - storage.type
+    settings:
+      foreground: "#FFEB60"
+  -
+    name: Declaration syntax
+    scope:
+      - keyword.declaration.jai
+    settings:
+      foreground: "#d4d4d4"
+  -
+    name: Member variables
+    scope:
+      - variable.other.member.jai
+    settings:
+      foreground: "#c7529e"
+  -
+    name: Constant declarations
+    scope:
+      - variable.other.constant.declaration.jai
+    settings:
+      foreground: "#5972bb"
+  -
+    name: Support variables
+    scope:
+      - support.variable.jai
+    settings:
+      foreground: "#df75df"
+  -
+    name: Directive keywords
+    scope:
+      - keyword.control.import.directive.jai
+      - keyword.other.directive.string.jai
+      - keyword.other.directive.jai
+    settings:
+      foreground: "#fbb840"
+  -
+    name: Import strings
+    scope:
+      - string-quoted.other.import.jai
+    settings:
+      foreground: "#b8e272"
+  -
+    name: Parameters
+    scope:
+      - variable.parameter.jai
+    settings:
+      foreground: "#00ffff"
+  -
+    name: Enumerator
+    scope:
+      - variable.enum.jai
+    settings:
+      foreground: "#c4e49a"
+  -
+    name: Deprecated
+    scope:
+      - invalid.deprecated.jai
+    settings:
+      foreground: "#dd3636"
+      fontStyle: "italic"
