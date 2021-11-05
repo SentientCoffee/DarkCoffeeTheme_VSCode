@@ -3,7 +3,7 @@
     "displayName": "Dark Coffee",
     "description": "Custom VSCode theme",
     "publisher": "SentientCoffee",
-    "version": "0.0.19",
+    "version": "0.0.20",
     "engines": {
         "vscode": "^1.50.0"
     },
