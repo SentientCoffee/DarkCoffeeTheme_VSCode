@@ -660,20 +660,25 @@ colors:
 
 semanticHighlighting: true
 semanticTokenColors:
-  variable.readonly: "#5972BB"
-  variable.global  : "#5972BB"
-  variable.local   : "#b14301"
-  class            : "#FFEB60"
-  comment          : "#627373"
-  controlKeyword   : "#DF75DF"
-  customLiteral    : "#B8E272"
-  enum             : "#FFEB60"
-  enumMember       : "#C4E49A"
-  enummember       : "#C4E49A"
-  field            : "#C7529E"
-  field.static     : "#F748BA"
-  function         : "#82B7E1"
-  interface        : "#FFEB60"
+  variable.declaration:
+    fontStyle: bold
+  variable.typeHint   : "#ffeb60"
+  variable.global     : "#5972BB"
+  variable.local      : "#b14301"
+  variable.readonly   : "#5972BB"
+  class               : "#ffeb60"
+  class.typeHint      : "#ffeb60"
+  class.builtin       : "#df75df"
+  comment             : "#627373"
+  controlKeyword      : "#DF75DF"
+  customLiteral       : "#B8E272"
+  enum                : "#FFEB60"
+  enumMember          : "#C4E49A"
+  enummember          : "#C4E49A"
+  field               : "#C7529E"
+  field.static        : "#F748BA"
+  function            : "#82B7E1"
+  interface           : "#FFEB60"
   label:
     foreground: "#C8C8C8"
     fontStyle : bold
@@ -1076,7 +1081,7 @@ tokenColors:
       - entity.name.function.member
       - entity.name.function.member.static
       - entity.name.function.templated
-      - meta.function-call
+      # - meta.function-call
       - keyword.other.special-method
       - support.function
     settings:
@@ -1271,6 +1276,75 @@ tokenColors:
     settings:
       foreground: "#FFEB60"
 #####################################################################
+# Python (.py)
+#####################################################################
+  -
+    name: Docstrings
+    scope:
+      - string.quoted.docstring.multi.python
+      - string.quoted.docstring.multi.python punctuation.definition.string.begin.python
+      - string.quoted.docstring.multi.python punctuation.definition.string.end.python
+    settings:
+      foreground: "#627373"
+      fontStyle: italic
+  -
+    name: Codetag notation (NOTEs in docstrings)
+    scope:
+      - string.quoted.docstring.multi.python keyword.codetag.notation.python
+    settings:
+      foreground: "#5bd35f"
+  -
+    name: Shell operators and constant language (docstrings)
+    scope:
+      - string.quoted.docstring.multi.python keyword.control.flow.python
+      - string.quoted.docstring.multi.python constant.language.python
+    settings:
+      foreground: "#eeeeee"
+  -
+    name: Function storage type
+    scope:
+      - storage.type.function.python
+    settings:
+      foreground: "#df75df"
+  -
+    name: Function decorators
+    scope:
+      - entity.name.function.decorator.python
+      - punctuation.definition.decorator.python
+    settings:
+      foreground: "#f92672"
+  -
+    name: Function calls
+    scope:
+      - meta.function-call.python meta.function-call.generic.python
+    settings:
+      foreground: "#82b7e1"
+  -
+    name: Logical operators
+    scope:
+      - keyword.operator.logical.python
+    settings:
+      foreground: "#df75df"
+  -
+    name: Magic variables
+    scope:
+      - support.variable.magic.python
+    settings:
+      foreground: "#f748ba"
+  -
+    name: Parameters
+    scope:
+      - variable.parameter.function.language.python
+      - variable.parameter.function-call.python
+    settings:
+      foreground: "#00ffff"
+  -
+    name: Constants
+    scope:
+      - constant.other.caps.python
+    settings:
+      foreground: "#5972bb"
+#####################################################################
 # Dart/Flutter (.dart)
 #####################################################################
   -
@@ -1317,7 +1391,6 @@ tokenColors:
     name: Storage types
     scope:
       - storage.type.jai
-      - storage.type
     settings:
       foreground: "#FFEB60"
   -
