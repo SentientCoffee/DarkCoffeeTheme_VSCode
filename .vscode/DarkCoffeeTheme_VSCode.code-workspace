@@ -2,7 +2,7 @@
     "folders": [
         {
             "path": "..",
-            "name": "root"
+            "name": "Theme"
         }
     ],
     "launch" : {
@@ -14,7 +14,7 @@
                 "request": "launch",
                 "preLaunchTask": "Update colors",
                 "args": [
-                    "--extensionDevelopmentPath=${workspaceFolder:root}"
+                    "--extensionDevelopmentPath=${workspaceFolder:Theme}"
                 ]
             }
         ]

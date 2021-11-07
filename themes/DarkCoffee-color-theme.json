@@ -49,6 +49,7 @@
     "checkbox.border": "#4a4a4a",
     "checkbox.foreground": "#d4d4d4",
     "dart.closingLabels": "#757575",
+    "dart.flutterUiGuides": "#ff00ff",
     "debugConsole.errorForeground": "#dd3636",
     "debugConsole.infoForeground": "#009b22",
     "debugConsole.sourceForeground": "#00548b",
@@ -110,7 +111,7 @@
     "editor.inlineValuesForeground": "#b4b4b4",
     "editor.lineHighlightBackground": "#4a4a4a4a",
     "editor.lineHighlightBorder": "#4a4a4a77",
-    "editor.linkedEditingBackground": "#ff00ff",
+    "editor.linkedEditingBackground": "#84a5b321",
     "editor.rangeHighlightBackground": "#4a4a4a4a",
     "editor.rangeHighlightBorder": "#4a4a4a77",
     "editor.selectionBackground": "#84a5b341",
@@ -132,11 +133,23 @@
     "editorBracketMatch.border": "#b4b4b4",
     "editorBracketHighlight.foreground1": "#d4d4d4",
     "editorBracketHighlight.foreground2": "#86b5e3",
-    "editorBracketHighlight.foreground3": "#b14301",
+    "editorBracketHighlight.foreground3": "#f92672",
     "editorBracketHighlight.foreground4": "#b8e272",
-    "editorBracketHighlight.foreground5": "#ffeb60",
+    "editorBracketHighlight.foreground5": "#ff8040",
     "editorBracketHighlight.foreground6": "#df75df",
-    "editorBracketHighlight.unexpectedBracket.foreground": "#dd363677",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#dd3636bb",
+    "editorBracketPairGuide.activeBackground1": "#d4d4d4bb",
+    "editorBracketPairGuide.activeBackground2": "#86b5e3bb",
+    "editorBracketPairGuide.activeBackground3": "#f92672bb",
+    "editorBracketPairGuide.activeBackground4": "#b8e272bb",
+    "editorBracketPairGuide.activeBackground5": "#ff8040bb",
+    "editorBracketPairGuide.activeBackground6": "#df75dfbb",
+    "editorBracketPairGuide.background1": "#d4d4d477",
+    "editorBracketPairGuide.background2": "#86b5e377",
+    "editorBracketPairGuide.background3": "#f9267277",
+    "editorBracketPairGuide.background4": "#b8e27277",
+    "editorBracketPairGuide.background5": "#ff804077",
+    "editorBracketPairGuide.background6": "#df75df77",
     "editorCodeLens.foreground": "#757575",
     "editorCursor.background": "#d4d4d44a",
     "editorCursor.foreground": "#d4d4d4",
@@ -164,6 +177,7 @@
     "editorHoverWidget.background": "#1a1a1a",
     "editorHoverWidget.border": "#4a4a4a",
     "editorHoverWidget.foreground": "#b4b4b4",
+    "editorHoverWidget.highlightForeground": "#ff00ff",
     "editorHoverWidget.statusBarBackground": "#1a1a1a",
     "editorIndentGuide.activeBackground": "#757575",
     "editorIndentGuide.background": "#4a4a4a",
@@ -172,6 +186,10 @@
     "editorInfo.border": "#00000000",
     "editorInlayHint.background": "#ff00ff",
     "editorInlayHint.foreground": "#ff00ff",
+    "editorInlayHint.parameterBackground": "#ff00ff",
+    "editorInlayHint.parameterForeground": "#ff00ff",
+    "editorInlayHint.typeBackground": "#ff00ff",
+    "editorInlayHint.typeForeground": "#ff00ff",
     "editorLightBulb.foreground": "#ffaa44",
     "editorLightBulbAutoFix.foreground": "#ffaa44",
     "editorLineNumber.activeForeground": "#757575",
@@ -227,6 +245,7 @@
     "extensionButton.prominentForeground": "#d4d4d4",
     "extensionButton.prominentHoverBackground": "#008dc5",
     "extensionIcon.starForeground": "#d4d4d4",
+    "extensionIcon.verifiedForeground": "#d4d4d4",
     "gitDecoration.addedResourceForeground": "#00db2f",
     "gitDecoration.conflictingResourceForeground": "#007bcc",
     "gitDecoration.deletedResourceForeground": "#dd3636",
@@ -263,6 +282,8 @@
     "keybindingLabel.border": "#00000000",
     "keybindingLabel.bottomBorder": "#757575",
     "keybindingLabel.foreground": "#b4b4b4",
+    "keybindingTable.headerBackground": "#2b2b2b",
+    "keybindingTable.rowsBackground": "#1d1d1d",
     "list.activeSelectionBackground": "#4a4a4a",
     "list.activeSelectionForeground": "#d4d4d4",
     "list.activeSelectionIconForeground": "#d4d4d4",
@@ -308,7 +329,9 @@
     "minimap.background": "#1a1a1a",
     "minimap.errorHighlight": "#dd3636",
     "minimap.findMatchHighlight": "#4a4a4a",
+    "minimap.foregroundOpacity": "#000000ff",
     "minimap.selectionHighlight": "#d4d4d4",
+    "minimap.selectionOccurrenceHighlight": "#757575",
     "minimap.warningHighlight": "#ffcc44",
     "minimapGutter.addedBackground": "#00791a",
     "minimapGutter.deletedBackground": "#c50000",
@@ -328,6 +351,7 @@
     "notebook.inactiveFocusedCellBorder": "#ff00ff",
     "notebook.inactiveSelectedCellBorder": "#ff00ff",
     "notebook.outputContainerBackgroundColor": "#ff00ff",
+    "notebook.outputContainerBorderColor": "#ff00ff",
     "notebook.selectedCellBackground": "#ff00ff",
     "notebook.selectedCellBorder": "#ff00ff",
     "notebook.symbolHighlightBackground": "#ff00ff",
@@ -421,6 +445,8 @@
     "sideBarSectionHeader.border": "#757575",
     "sideBarSectionHeader.foreground": "#d4d4d4",
     "sideBarTitle.foreground": "#d4d4d4",
+    "sideBySideEditor.horizontalBorder": "#ff00ff",
+    "sideBySideEditor.verticalBorder": "#ff00ff",
     "statusBar.background": "#2b2b2b",
     "statusBar.border": "#4a4a4a",
     "statusBar.debuggingBackground": "#bb6600",
@@ -560,19 +586,18 @@
     "welcomePage.progress.foreground": "#008dc5",
     "welcomePage.tileBackground": "#2b2b2b",
     "welcomePage.tileHoverBackground": "#4a4a4a77",
+    "welcomePage.tileShadow": "#2b2b2b44",
     "welcomePage.tileShadow.": "#2b2b2b44",
     "window.activeBorder": "#00000000",
     "window.inactiveBorder": "#00000000"
   },
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "variable.declaration": {
-      "fontStyle": "bold"
-    },
-    "variable.typeHint": "#ffeb60",
     "variable.global": "#5972BB",
     "variable.local": "#b14301",
     "variable.readonly": "#5972BB",
+    "variable.typeHint": "#ffeb60",
+    "annotation": "#F92672",
     "class": "#ffeb60",
     "class.typeHint": "#ffeb60",
     "class.builtin": "#df75df",
@@ -608,6 +633,7 @@
     "plainKeyword": "#DF75DF",
     "property": "#C7529E",
     "property.static": "#F748BA",
+    "source.interpolation": "#F92672",
     "string": "#B8E272",
     "stringLiteral": "#B8E272",
     "stringVerbatim": "#B8E272",
@@ -811,7 +837,6 @@
     {
       "name": "ES7 Bind Operator",
       "scope": [
-        "source.js",
         "constant.other.object.key.js",
         "string.unquoted.label.js"
       ],
@@ -1508,16 +1533,37 @@
     },
     {
       "name": "Dart imports",
-      "scope": "keyword.other.import",
+      "scope": [
+        "keyword.other.import"
+      ],
       "settings": {
         "foreground": "#FBB840",
         "fontStyle": ""
       }
     },
     {
-      "name": "Keywords and storage types",
+      "name": "Dart string interpolation",
       "scope": [
-        "keyword.operator.odin",
+        "source.dart string.interpolated.expression"
+      ],
+      "settings": {
+        "foreground": "#f92672",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Dart string interpolation variables",
+      "scope": [
+        "source.dart string.interpolated variable.parameter.dart"
+      ],
+      "settings": {
+        "foreground": "#d4d4d4",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Odin storage types",
+      "scope": [
         "storage.type.odin"
       ],
       "settings": {
@@ -1525,7 +1571,16 @@
       }
     },
     {
-      "name": "Tag keywords",
+      "name": "Odin support types",
+      "scope": [
+        "support.type.odin"
+      ],
+      "settings": {
+        "foreground": "#FFEB60"
+      }
+    },
+    {
+      "name": "Odin tag keywords",
       "scope": [
         "keyword.tag.odin"
       ],
