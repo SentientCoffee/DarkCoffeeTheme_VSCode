@@ -18,19 +18,19 @@ colors:
   selection.background : "#75757544"
   widget.shadow        : "#2b2b2b44"
 
-  activityBar.activeBackground  : "#00548b"
-  activityBar.activeBorder      : "#008dc5"
-  activityBar.activeFocusBorder : "#008dc5"
+  activityBar.activeBackground  : "#3b295c"
+  activityBar.activeBorder      : "#7e57c2"
+  activityBar.activeFocusBorder : "#7e57c2"
   activityBar.background        : "#1a1a1a"
   activityBar.border            : "#4a4a4a"
   activityBar.dropBorder        : "#b4b4b4"
   activityBar.foreground        : "#d4d4d4"
   activityBar.inactiveForeground: "#757575"
 
-  activityBarBadge.foreground: "#eeeeee"
-  activityBarBadge.background: "#008dc5"
+  activityBarBadge.foreground: "#d4d4d4"
+  activityBarBadge.background: "#7e57c2"
 
-  badge.background: "#00548b"
+  badge.background: "#5c408f"
   badge.foreground: "#eeeeee"
 
   banner.background    : "#4a4a4a"
@@ -43,13 +43,13 @@ colors:
   breadcrumb.foreground               : "#757575"
   breadcrumbPicker.background         : "#1a1a1a"
 
-  button.background              : "#00548b"
-  button.foreground              : "#eeeeee"
+  button.background              : "#3b295c"
+  button.foreground              : "#d4d4d4"
   button.border                  : "#00000000"
-  button.hoverBackground         : "#008dc5"
-  button.secondaryBackground     : "#00548b"
-  button.secondaryForeground     : "#eeeeee"
-  button.secondaryHoverBackground: "#008dc5"
+  button.hoverBackground         : "#5c408f"
+  button.secondaryBackground     : "#3b295c"
+  button.secondaryForeground     : "#d4d4d4"
+  button.secondaryHoverBackground: "#5c408f"
 
   charts.blue      : "#ff00ff"
   charts.foreground: "#ff00ff"
@@ -293,9 +293,9 @@ colors:
   extensionBadge.remoteBackground: "#ff00ff"
   extensionBadge.remoteForeground: "#ff00ff"
 
-  extensionButton.prominentBackground     : "#00548b"
+  extensionButton.prominentBackground     : "#5c408f"
   extensionButton.prominentForeground     : "#d4d4d4"
-  extensionButton.prominentHoverBackground: "#008dc5"
+  extensionButton.prominentHoverBackground: "#7e57c2"
 
   extensionIcon.starForeground    : "#d4d4d4"
   extensionIcon.verifiedForeground: "#d4d4d4"
@@ -646,8 +646,8 @@ colors:
   textBlockQuote.background: "#2b2b2b"
   textBlockQuote.border    : "#4a4a4a"
   textCodeBlock.background : "#2b2b2b"
-  textLink.activeForeground: "#008dc5"
-  textLink.foreground      : "#008dc5"
+  textLink.activeForeground: "#9668e8"
+  textLink.foreground      : "#9668e8"
   textPreformat.foreground : "#eeeeee"
   textSeparator.foreground : "#ff00ff"
 
