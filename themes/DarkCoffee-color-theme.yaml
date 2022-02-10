@@ -969,14 +969,13 @@ tokenColors:
       - text.html.markdown markup.inline.raw.markdown
       - markup.inline.raw.string.markdown
     settings:
-      foreground: "#eeeeee"
-      fontStyle: "bold"
+      foreground: "#dfacdf"
   -
     name: Markup italic
     scope:
       - markup.italic
     settings:
-      fontStyle : italic
+      fontStyle: italic
   -
     name: Markup bold
     scope:
@@ -984,7 +983,7 @@ tokenColors:
       - markup.bold string
     settings:
       foreground: "#b4b4b4"
-      fontStyle : bold
+      fontStyle: bold
   -
     name: Markup italic-bold
     scope:

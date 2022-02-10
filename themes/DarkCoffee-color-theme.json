@@ -959,8 +959,7 @@
         "markup.inline.raw.string.markdown"
       ],
       "settings": {
-        "foreground": "#eeeeee",
-        "fontStyle": "bold"
+        "foreground": "#dfacdf"
       }
     },
     {
