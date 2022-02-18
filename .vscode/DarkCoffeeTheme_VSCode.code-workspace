@@ -39,7 +39,7 @@
                 "label": "Package and install",
                 "type": "shell",
                 "group": "build",
-                "command": "@del dark-coffee-theme-* && vsce package patch && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do @code --install-extension %i",
+                "command": "@del dark-coffee-theme-* && vsce package && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do @code --install-extension %i",
                 "options": {
                     "cwd": "${workspaceFolder}",
                 },

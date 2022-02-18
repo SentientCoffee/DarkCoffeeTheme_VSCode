@@ -1,7 +1,7 @@
 {
     "name": "dark-coffee-theme",
     "displayName": "Dark Coffee",
-    "description": "Custom VSCode theme",
+    "description": "Dark VSCode theme extended from the Gitlab Dark theme, with purple accents",
     "publisher": "SentientCoffee",
     "version": "0.0.24",
     "engines": {
