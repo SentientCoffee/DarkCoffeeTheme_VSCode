@@ -159,25 +159,35 @@ colors:
   editorBracketMatch.border    : "#b4b4b4"
 
   editorBracketHighlight.foreground1                 : "#d4d4d4"
-  editorBracketHighlight.foreground2                 : "#86b5e3"
-  editorBracketHighlight.foreground3                 : "#f92672"
-  editorBracketHighlight.foreground4                 : "#b8e272"
-  editorBracketHighlight.foreground5                 : "#ff8040"
-  editorBracketHighlight.foreground6                 : "#df75df"
+  editorBracketHighlight.foreground2                 : "#c792ea"
+  editorBracketHighlight.foreground3                 : "#ffcb6b"
+  editorBracketHighlight.foreground4                 : "#f78c6c"
+  editorBracketHighlight.foreground5                 : "#ff5370"
+  editorBracketHighlight.foreground6                 : "#82aaff"
+                       # foreground7                 : "#c17e70"
+                       # foreground8                 : "#f07178"
+                       # foreground9                 : "#c792ea"
+                       # foreground10                : "#c3e88d"
   editorBracketHighlight.unexpectedBracket.foreground: "#dd3636bb"
+  # editorBracketHighlight.foreground1                 : "#d4d4d4"
+  # editorBracketHighlight.foreground2                 : "#86b5e3"
+  # editorBracketHighlight.foreground3                 : "#f92672"
+  # editorBracketHighlight.foreground4                 : "#b8e272"
+  # editorBracketHighlight.foreground5                 : "#ff8040"
+  # editorBracketHighlight.foreground6                 : "#df75df"
 
   editorBracketPairGuide.activeBackground1: "#d4d4d4bb"
-  editorBracketPairGuide.activeBackground2: "#86b5e3bb"
-  editorBracketPairGuide.activeBackground3: "#f92672bb"
-  editorBracketPairGuide.activeBackground4: "#b8e272bb"
-  editorBracketPairGuide.activeBackground5: "#ff8040bb"
-  editorBracketPairGuide.activeBackground6: "#df75dfbb"
+  editorBracketPairGuide.activeBackground2: "#c792eabb"
+  editorBracketPairGuide.activeBackground3: "#ffcb6bbb"
+  editorBracketPairGuide.activeBackground4: "#f78c6cbb"
+  editorBracketPairGuide.activeBackground5: "#ff5370bb"
+  editorBracketPairGuide.activeBackground6: "#82aaffbb"
   editorBracketPairGuide.background1      : "#d4d4d477"
-  editorBracketPairGuide.background2      : "#86b5e377"
-  editorBracketPairGuide.background3      : "#f9267277"
-  editorBracketPairGuide.background4      : "#b8e27277"
-  editorBracketPairGuide.background5      : "#ff804077"
-  editorBracketPairGuide.background6      : "#df75df77"
+  editorBracketPairGuide.background2      : "#c792ea77"
+  editorBracketPairGuide.background3      : "#ffcb6b77"
+  editorBracketPairGuide.background4      : "#f78c6c77"
+  editorBracketPairGuide.background5      : "#ff537077"
+  editorBracketPairGuide.background6      : "#82aaff77"
 
   editorCodeLens.foreground: "#757575"
 
@@ -693,7 +703,7 @@ colors:
 semanticHighlighting: true
 semanticTokenColors:
   variable.global  : "#5972bb"
-  variable.local   : "#b14301"
+  variable.local   : "#c17e70"
   variable.readonly: "#5972bb"
   variable.typeHint: "#ffeb60"
   annotation       : "#f92672"
@@ -713,7 +723,7 @@ semanticTokenColors:
   label:
     foreground: "#c8c8c8"
     fontStyle : bold
-  local: "#b14301"
+  local: "#c17e70"
   macro:
     foreground: "#86b5e3"
     fontStyle : bold
@@ -887,35 +897,59 @@ tokenColors:
 # JSON levels
 #############################################################
   -
-    name: JSON Key - Level 0
+    name: JSON Key - Level 1
     scope:
-      - source.json meta.structure.dictionary.json support.type.property-name.json
+      - meta.structure.dictionary.json support.type.property-name.json
     settings:
       foreground: "#c792ea"
   -
-    name: JSON Key - Level 1
+    name: JSON Key - Level 2
     scope:
-      - source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
+      - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
     settings:
       foreground: "#ffcb6b"
   -
-    name: JSON Key - Level 2
+    name: JSON Key - Level 3
     scope:
-      - source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
+      - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
     settings:
       foreground: "#f78c6c"
   -
-    name: JSON Key - Level 3
+    name: JSON Key - Level 4
     scope:
-      - source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
+      - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
     settings:
       foreground: "#ff5370"
   -
-    name: JSON Key - Level 4
+    name: JSON Key - Level 5
     scope:
-      - source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
+      - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
+    settings:
+      foreground: "#82aaff"
+  -
+    name: JSON Key - Level 6
+    scope:
+      - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
     settings:
       foreground: "#c17e70"
+  # -
+  #   name: JSON Key - Level 7
+  #   scope:
+  #     - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
+  #   settings:
+  #     foreground: "#f07178"
+  # -
+  #   name: JSON Key - Level 8
+  #   scope:
+  #     - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
+  #   settings:
+  #     foreground: "#c792ea"
+  # -
+  #   name: JSON Key - Level 9
+  #   scope:
+  #     - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
+  #   settings:
+  #     foreground: "#c3e88d"
   -
     name: JSON Key - Level 5
     scope:
@@ -1169,7 +1203,7 @@ tokenColors:
       - variable.other.global
       - entity.name.variable.local
     settings:
-      foreground: "#b14301"
+      foreground: "#c17e70"
   -
     name: C++ macros
     scope:
