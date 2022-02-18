@@ -897,59 +897,69 @@
       }
     },
     {
-      "name": "JSON Key - Level 5",
+      "name": "Markdown plain text",
       "scope": [
-        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        "text.html.markdown",
+        "punctuation.definition.list_item.markdown",
+        "punctuation.definition.list.begin.markdown",
+        "punctuation.definition.list.end.markdown"
       ],
       "settings": {
-        "foreground": "#82aaff"
+        "foreground": "#b4b4b4"
       }
     },
     {
-      "name": "JSON Key - Level 6",
+      "name": "Markdown heading - Level 1",
       "scope": [
-        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-      ],
-      "settings": {
-        "foreground": "#f07178"
-      }
-    },
-    {
-      "name": "JSON Key - Level 7",
-      "scope": [
-        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        "heading.1.markdown"
       ],
       "settings": {
         "foreground": "#c792ea"
       }
     },
     {
-      "name": "JSON Key - Level 8",
+      "name": "Markdown heading - Level 2",
       "scope": [
-        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
+        "heading.2.markdown"
       ],
       "settings": {
-        "foreground": "#c3e88d"
+        "foreground": "#ffcb6b"
       }
     },
     {
-      "name": "Markdown plain text",
+      "name": "Markdown heading - Level 3",
       "scope": [
-        "text.html.markdown",
-        "punctuation.definition.list_item.markdown"
+        "heading.3.markdown"
       ],
       "settings": {
-        "foreground": "#a3a3a3"
+        "foreground": "#f78c6c"
       }
     },
     {
-      "name": "Markdown heading",
+      "name": "Markdown heading - Level 4",
       "scope": [
-        "markdown.heading",
-        "markup.heading"
+        "heading.4.markdown"
       ],
       "settings": {
-        "foreground": "#f07178"
+        "foreground": "#ff5370"
+      }
+    },
+    {
+      "name": "Markdown heading - Level 5",
+      "scope": [
+        "heading.5.markdown"
+      ],
+      "settings": {
+        "foreground": "#82aaff"
+      }
+    },
+    {
+      "name": "Markdown heading - Level 6",
+      "scope": [
+        "heading.6.markdown"
+      ],
+      "settings": {
+        "foreground": "#c17e70"
       }
     },
     {
@@ -958,7 +968,7 @@
         "markup.raw.block.markdown"
       ],
       "settings": {
-        "foreground": "#df75df"
+        "foreground": "#f07178"
       }
     },
     {
@@ -968,7 +978,7 @@
         "markup.inline.raw.string.markdown"
       ],
       "settings": {
-        "foreground": "#dfacdf"
+        "foreground": "#eeeeee"
       }
     },
     {
@@ -1012,7 +1022,10 @@
         "punctuation.definition.heading.markdown",
         "punctuation.definition.italic.markdown",
         "punctuation.definition.raw.markdown",
-        "punctuation.definition.quote.begin.markdown"
+        "punctuation.definition.quote.begin.markdown",
+        "punctuation.definition.metadata.markdown",
+        "punctuation.definition.link.title.begin.markdown",
+        "punctuation.definition.link.title.end.markdown"
       ],
       "settings": {
         "foreground": "#b4b4b444"
@@ -1024,19 +1037,19 @@
         "punctuation.definition.list.begin.markdown"
       ],
       "settings": {
-        "foreground": "#868686"
+        "foreground": "#eeeeee"
       }
     },
     {
-      "name": "Markup hyperlinks",
+      "name": "Markup hyperlinks/image links",
       "scope": [
         "meta.link.reference.markdown markup.underline.link.markdown",
         "meta.link.inline.markdown markup.underline.link.markdown",
-        "meta.link.inline.markdown punctuation.definition.metadata.markdown"
+        "meta.image.inline.markdown markup.underline.link.image.markdown"
       ],
       "settings": {
-        "fontStyle": "underline",
-        "foreground": "#008dc5"
+        "fontStyle": "italic underline",
+        "foreground": "#9668e8"
       }
     },
     {
@@ -1049,7 +1062,16 @@
         "meta.link.reference.markdown punctuation.definition.string.end.markdown"
       ],
       "settings": {
-        "foreground": "#ffcb6b"
+        "foreground": "#df75df"
+      }
+    },
+    {
+      "name": "Markdown image description",
+      "scope": [
+        "string.other.link.description.markdown"
+      ],
+      "settings": {
+        "foreground": "#b8e272"
       }
     },
     {

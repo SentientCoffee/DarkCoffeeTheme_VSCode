@@ -950,30 +950,6 @@ tokenColors:
   #     - meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
   #   settings:
   #     foreground: "#c3e88d"
-  -
-    name: JSON Key - Level 5
-    scope:
-      - source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
-    settings:
-      foreground: "#82aaff"
-  -
-    name: JSON Key - Level 6
-    scope:
-      - source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
-    settings:
-      foreground: "#f07178"
-  -
-    name: JSON Key - Level 7
-    scope:
-      - source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
-    settings:
-      foreground: "#c792ea"
-  -
-    name: JSON Key - Level 8
-    scope:
-      - source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json
-    settings:
-      foreground: "#c3e88d"
 #########################################################
 # Markdown (.md)
 #########################################################
@@ -982,28 +958,59 @@ tokenColors:
     scope:
       - text.html.markdown
       - punctuation.definition.list_item.markdown
+      - punctuation.definition.list.begin.markdown
+      - punctuation.definition.list.end.markdown
     settings:
-      foreground: "#a3a3a3"
+      foreground: "#b4b4b4"
   -
-    name: Markdown heading
+    name: Markdown heading - Level 1
     scope:
-      - markdown.heading
-      - markup.heading
+      - heading.1.markdown
     settings:
-      foreground: "#f07178"
+      foreground: "#c792ea"
+  -
+    name: Markdown heading - Level 2
+    scope:
+      - heading.2.markdown
+    settings:
+      foreground: "#ffcb6b"
+  -
+    name: Markdown heading - Level 3
+    scope:
+      - heading.3.markdown
+    settings:
+      foreground: "#f78c6c"
+  -
+    name: Markdown heading - Level 4
+    scope:
+      - heading.4.markdown
+    settings:
+      foreground: "#ff5370"
+  -
+    name: Markdown heading - Level 5
+    scope:
+      - heading.5.markdown
+    settings:
+      foreground: "#82aaff"
+  -
+    name: Markdown heading - Level 6
+    scope:
+      - heading.6.markdown
+    settings:
+      foreground: "#c17e70"
   -
     name: Markup raw block
     scope:
       - markup.raw.block.markdown
     settings:
-      foreground: "#df75df"
+      foreground: "#f07178"
   -
     name: Markdown inline raw
     scope:
       - text.html.markdown markup.inline.raw.markdown
       - markup.inline.raw.string.markdown
     settings:
-      foreground: "#dfacdf"
+      foreground: "#eeeeee"
   -
     name: Markup italic
     scope:
@@ -1037,6 +1044,9 @@ tokenColors:
       - punctuation.definition.italic.markdown
       - punctuation.definition.raw.markdown
       - punctuation.definition.quote.begin.markdown
+      - punctuation.definition.metadata.markdown
+      - punctuation.definition.link.title.begin.markdown
+      - punctuation.definition.link.title.end.markdown
     settings:
       foreground: "#b4b4b444"
   -
@@ -1044,16 +1054,16 @@ tokenColors:
     scope:
       - punctuation.definition.list.begin.markdown
     settings:
-      foreground: "#868686"
+      foreground: "#eeeeee"
   -
-    name: Markup hyperlinks
+    name: Markup hyperlinks/image links
     scope:
       - meta.link.reference.markdown markup.underline.link.markdown
       - meta.link.inline.markdown markup.underline.link.markdown
-      - meta.link.inline.markdown punctuation.definition.metadata.markdown
+      - meta.image.inline.markdown markup.underline.link.image.markdown
     settings:
-      fontStyle : underline
-      foreground: "#008dc5"
+      fontStyle : italic underline
+      foreground: "#9668e8"
   -
     name: Markdown link title
     scope:
@@ -1063,7 +1073,13 @@ tokenColors:
       - meta.link.reference.markdown punctuation.definition.string.begin.markdown
       - meta.link.reference.markdown punctuation.definition.string.end.markdown
     settings:
-      foreground: "#ffcb6b"
+      foreground: "#df75df"
+  -
+    name: Markdown image description
+    scope:
+      - string.other.link.description.markdown
+    settings:
+      foreground: "#b8e272"
   -
     name: Markup - Underline
     scope:
