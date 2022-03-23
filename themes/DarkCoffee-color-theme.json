@@ -608,15 +608,9 @@
     "field.static": "#f748ba",
     "function": "#82b7e1",
     "interface": "#ffeb60",
-    "label": {
-      "foreground": "#c8c8c8",
-      "fontStyle": "bold"
-    },
+    "label": "#c8c8c8",
     "local": "#c17e70",
-    "macro": {
-      "foreground": "#86b5e3",
-      "fontStyle": "bold"
-    },
+    "macro": "#86b5e3",
     "memberOperatorOverload": "#d4d4d4",
     "member.static": "#86b5e3",
     "method": "#86b5e3",
@@ -991,7 +985,7 @@
       }
     },
     {
-      "name": "Markup bold",
+      "name": "Markup",
       "scope": [
         "markup.bold",
         "markup.bold string"
@@ -1240,8 +1234,7 @@
         "entity.name.label"
       ],
       "settings": {
-        "foreground": "#c8c8c8",
-        "fontStyle": "bold"
+        "foreground": "#c8c8c8"
       }
     },
     {
@@ -1272,8 +1265,7 @@
         "entity.name.variable.preprocessor.symbol"
       ],
       "settings": {
-        "foreground": "#82b7e1",
-        "fontStyle": "bold"
+        "foreground": "#82b7e1"
       }
     },
     {
@@ -1420,8 +1412,7 @@
         "string constant.other.placeholder"
       ],
       "settings": {
-        "foreground": "#80ff80",
-        "fontStyle": "bold"
+        "foreground": "#80ff80"
       }
     },
     {
@@ -1584,8 +1575,7 @@
         "source.dart string.interpolated variable.parameter.dart"
       ],
       "settings": {
-        "foreground": "#d4d4d4",
-        "fontStyle": "bold"
+        "foreground": "#d4d4d4"
       }
     },
     {

@@ -702,31 +702,27 @@ colors:
 
 semanticHighlighting: true
 semanticTokenColors:
-  variable.global  : "#5972bb"
-  variable.local   : "#c17e70"
-  variable.readonly: "#5972bb"
-  variable.typeHint: "#ffeb60"
-  annotation       : "#f92672"
-  class            : "#ffeb60"
-  class.typeHint   : "#ffeb60"
-  class.builtin    : "#df75df"
-  comment          : "#627373"
-  controlKeyword   : "#df75df"
-  customLiteral    : "#b8e272"
-  enum             : "#ffeb60"
-  enumMember       : "#c4e49a"
-  enummember       : "#c4e49a"
-  field            : "#c7529e"
-  field.static     : "#f748ba"
-  function         : "#82b7e1"
-  interface        : "#ffeb60"
-  label:
-    foreground: "#c8c8c8"
-    fontStyle : bold
-  local: "#c17e70"
-  macro:
-    foreground: "#86b5e3"
-    fontStyle : bold
+  variable.global       : "#5972bb"
+  variable.local        : "#c17e70"
+  variable.readonly     : "#5972bb"
+  variable.typeHint     : "#ffeb60"
+  annotation            : "#f92672"
+  class                 : "#ffeb60"
+  class.typeHint        : "#ffeb60"
+  class.builtin         : "#df75df"
+  comment               : "#627373"
+  controlKeyword        : "#df75df"
+  customLiteral         : "#b8e272"
+  enum                  : "#ffeb60"
+  enumMember            : "#c4e49a"
+  enummember            : "#c4e49a"
+  field                 : "#c7529e"
+  field.static          : "#f748ba"
+  function              : "#82b7e1"
+  interface             : "#ffeb60"
+  label                 : "#c8c8c8"
+  local                 : "#c17e70"
+  macro                 : "#86b5e3"
   memberOperatorOverload: "#d4d4d4"
   member.static         : "#86b5e3"
   method                : "#86b5e3"
@@ -1018,7 +1014,7 @@ tokenColors:
     settings:
       fontStyle: italic
   -
-    name: Markup bold
+    name: Markup
     scope:
       - markup.bold
       - markup.bold string
@@ -1205,7 +1201,6 @@ tokenColors:
       - entity.name.label
     settings:
       foreground: "#c8c8c8"
-      fontStyle : bold
   -
     name: C++ language methods
     scope:
@@ -1228,7 +1223,6 @@ tokenColors:
       - entity.name.variable.preprocessor.symbol
     settings:
       foreground: "#82b7e1"
-      fontStyle : bold
   -
     name: C++ member fields/properties
     scope:
@@ -1340,7 +1334,6 @@ tokenColors:
       - string constant.other.placeholder
     settings:
       foreground: "#80ff80"
-      fontStyle : bold
   -
     name: C++ string escape characters
     scope:
@@ -1462,7 +1455,6 @@ tokenColors:
       - source.dart string.interpolated variable.parameter.dart
     settings:
       foreground: "#d4d4d4"
-      fontStyle : bold
 #####################################################################
 # Odin (.odin)
 #####################################################################
