@@ -1207,7 +1207,6 @@ tokenColors:
       - variable.language
     settings:
       foreground: "#82b7e1"
-      fontStyle : italic
   -
     name: C++ local variables
     scope:
@@ -1542,3 +1541,31 @@ tokenColors:
     settings:
       foreground: "#dd3636"
       fontStyle: "italic"
+#####################################################################
+# GLSL (.glsl)
+#####################################################################
+  -
+    name: GLSL interpolated indices
+    scope:
+      - string.interpolated.indexes.glsl
+    settings:
+      foreground: "#c7529e"
+  -
+    name: GLSL preprocessor
+    scope:
+      - keyword.control.preprocessor.glsl
+      - keyword.directive.preprocessor.glsl
+    settings:
+      foreground: "#fbb840"
+  -
+    name: GLSL types
+    scope:
+      - storage.type.glsl
+    settings:
+      foreground: "#df75df"
+  -
+    name: GLSL variable language
+    scope:
+      - variable.language.glsl
+    settings:
+      foreground: "#5972bb"
