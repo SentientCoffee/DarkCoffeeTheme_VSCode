@@ -29,7 +29,7 @@
           "kind": "build",
           "isDefault": true
         },
-        "command": "npx js-yaml themes\\DarkCoffee-color-theme.yaml > themes\\DarkCoffee-color-theme.json",
+        "command": "npx js-yaml themes/DarkCoffee-color-theme.yaml > themes/DarkCoffee-color-theme.json",
         "options": {
           "cwd": "${workspaceFolder}",
         },
@@ -39,11 +39,11 @@
         "label": "Package and install",
         "type": "shell",
         "group": "build",
-        "command": "@del dark-coffee-theme-* && npm version patch && vsce package && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do @(code --install-extension %i)",
+        "command": "rm -f dark-coffee-theme-* && npm version patch && vsce package && ls -1 dark-coffee-theme-* | xargs -I {} codium --install-extension {}",
         "options": {
           "shell": {
-            "executable": "cmd.exe",
-            "args": [ "/c" ],
+            "executable": "/bin/sh",
+            "args": [ "-c" ],
           },
           "cwd": "${workspaceFolder}",
         },
