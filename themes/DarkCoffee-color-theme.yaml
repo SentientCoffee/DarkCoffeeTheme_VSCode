@@ -1569,3 +1569,44 @@ tokenColors:
       - variable.language.glsl
     settings:
       foreground: "#5972bb"
+#####################################################################
+# Shell script (.sh)
+#####################################################################
+  -
+    name: Shell commands
+    scope:
+      - entity.name.command.shell
+      - support.function.builtin.shell
+    settings:
+      foreground: "#82b7e1"
+  -
+    name: Shell options
+    scope:
+      - constant.other.option.shell
+      - constant.other.option.dash.shell
+      - string.unquoted.argument.shell
+    settings:
+      foreground: "#d4d4d4"
+  -
+    name: Shell variable expansion
+    scope:
+      - variable.language.special.shell
+      - variable.parameter.positional.shell
+      - punctuation.section.bracket.curly.variable.begin.shell
+      - punctuation.section.bracket.curly.variable.end.shell
+    settings:
+      foreground: "#f92672"
+  -
+    name: Shell shebang
+    scope:
+      - punctuation.definition.comment.shebang.shell
+      -	meta.shebang.shell
+    settings:
+      foreground: "#627373"
+      fontStyle: bold
+  -
+    name: Shell keywords
+    scope:
+      - keyword.operator.logical.shell
+    settings:
+      foreground: "#df75df"
