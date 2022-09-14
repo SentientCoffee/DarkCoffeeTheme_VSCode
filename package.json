@@ -3,7 +3,7 @@
     "displayName": "Dark Coffee",
     "description": "Dark VSCode theme extended from the Gitlab Dark theme, with purple accents",
     "publisher": "SentientCoffee",
-    "version": "0.0.31",
+    "version": "0.0.32",
     "engines": {
         "vscode": "^1.50.0"
     },
