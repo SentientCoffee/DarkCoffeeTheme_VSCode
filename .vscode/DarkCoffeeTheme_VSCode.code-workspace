@@ -39,16 +39,28 @@
         "label": "Package and install",
         "type": "shell",
         "group": "build",
-        "command": "rm -f dark-coffee-theme-* && npm version patch && vsce package && ls -1 dark-coffee-theme-* | xargs -I {} codium --install-extension {}",
-        "options": {
-          "shell": {
-            "executable": "/bin/sh",
-            "args": [ "-c" ],
+        "problemMatcher": [],
+        "linux": {
+          "command": "rm -f dark-coffee-theme-* && npm version patch && vsce package && ls -1 dark-coffee-theme-* | xargs -I {} codium --install-extension {}",
+          "options": {
+            "shell": {
+              "executable": "/bin/sh",
+              "args": [ "-c" ],
+            },
           },
           "cwd": "${workspaceFolder}",
         },
-        "problemMatcher": [],
-      },
+        "windows": {
+          "command": "@del dark-coffee-theme-* && npm version patch && vsce package && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do @(code --install-extension %i)",
+          "options": {
+            "shell": {
+              "executable": "cmd.exe",
+              "args": [ "/c" ],
+            },
+          },
+          "cwd": "${workspaceFolder}",
+        },
+      }
     ]
   },
   "settings": {}
