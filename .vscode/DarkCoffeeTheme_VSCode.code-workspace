@@ -41,7 +41,7 @@
         "group": "build",
         "problemMatcher": [],
         "linux": {
-          "command": "rm -f dark-coffee-theme-* && npm version patch && vsce package && ls -1 dark-coffee-theme-* | xargs -I {} codium --install-extension {}",
+          "command": "rm -f dark-coffee-theme-* && npm version patch && vsce package && ls -1 dark-coffee-theme-* | xargs -I {} code --install-extension {}",
           "options": {
             "shell": {
               "executable": "/bin/sh",
@@ -51,7 +51,7 @@
           "cwd": "${workspaceFolder}",
         },
         "windows": {
-          "command": "@del dark-coffee-theme-* && npm version patch && vsce package && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do @(codium --install-extension %i)",
+          "command": "@del dark-coffee-theme-* && npm version patch && vsce package && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do @(code --install-extension %i)",
           "options": {
             "shell": {
               "executable": "cmd.exe",
