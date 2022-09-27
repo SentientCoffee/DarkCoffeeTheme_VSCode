@@ -159,7 +159,7 @@ colors:
   editor.selectionForeground:                    "#ff00ff"
   editor.selectionHighlightBackground:           "#84a5b321"
   editor.selectionHighlightBorder:               "#00000000"
-  editor.snippetFinalTabstopHighlightBackground: "#ff00ff"
+  editor.snippetFinalTabstopHighlightBackground: "#4a4a4a77"
   editor.snippetFinalTabstopHighlightBorder:     "#4a4a4a77"
   editor.snippetTabstopHighlightBackground:      "#4a4a4a77"
   editor.snippetTabstopHighlightBorder:          "#00000000"
@@ -318,7 +318,7 @@ colors:
   editorSuggestWidget.selectedBackground:       "#4a4a4a"
   editorSuggestWidget.selectedForeground:       "#d4d4d4"
   editorSuggestWidget.selectedIconForeground:   "#d4d4d4"
-  editorSuggestWidgetStatus.foreground: "#b4b4b4"
+  editorSuggestWidgetStatus.foreground:         "#b4b4b4"
 
   editorUnicodeHighlight.background: "#00000000"
   editorUnicodeHighlight.border:     "#ffcc4477"
@@ -618,8 +618,8 @@ colors:
 
   statusBarItem.activeBackground:           "#757575"
   statusBarItem.compactHoverBackground:     "#ffffff44"
-  statusBarItem.errorBackground:            "#ff00ff"
-  statusBarItem.errorForeground:            "#ff00ff"
+  statusBarItem.errorBackground:            "#dd3636"
+  statusBarItem.errorForeground:            "#d4d4d4"
   statusBarItem.focusBorder:                "#757575"
   statusBarItem.hoverBackground:            "#ffffff22"
   statusBarItem.prominentBackground:        "#4a4a4a"
@@ -629,11 +629,11 @@ colors:
   statusBarItem.remoteForeground:           "#d4d4d4"
   statusBarItem.settingsProfilesBackground: "#ff00ff"
   statusBarItem.settingsProfilesForeground: "#ff00ff"
-  statusBarItem.warningBackground:          "#ff00ff"
-  statusBarItem.warningForeground:          "#ff00ff"
+  statusBarItem.warningBackground:          "#ffcc44"
+  statusBarItem.warningForeground:          "#2b2b2b"
 
   symbolIcon.arrayForeground:            "#f92672"
-  symbolIcon.booleanForeground:          "#df75df"
+  symbolIcon.booleanForeground:          "#5c408f"
   symbolIcon.classForeground:            "#ffeb60"
   symbolIcon.colorForeground:            "#757575"
   symbolIcon.constantForeground:         "#86b5e3"
@@ -647,11 +647,11 @@ colors:
   symbolIcon.functionForeground:         "#86b5e3"
   symbolIcon.interfaceForeground:        "#ffeb60"
   symbolIcon.keyForeground:              "#ff00ff"
-  symbolIcon.keywordForeground:          "#df75df"
+  symbolIcon.keywordForeground:          "#5c408f"
   symbolIcon.methodForeground:           "#86b5e3"
   symbolIcon.moduleForeground:           "#ffeb60"
   symbolIcon.namespaceForeground:        "#ffeb60"
-  symbolIcon.nullForeground:             "#df75df"
+  symbolIcon.nullForeground:             "#5c408f"
   symbolIcon.numberForeground:           "#ff9f40"
   symbolIcon.objectForeground:           "#ff00ff"
   symbolIcon.operatorForeground:         "#d4d4d4"
@@ -662,7 +662,7 @@ colors:
   symbolIcon.stringForeground:           "#b8e272"
   symbolIcon.structForeground:           "#ffeb60"
   symbolIcon.textForeground:             "#b4b4b4"
-  symbolIcon.typeParameterForeground:    "#ff00ff"
+  symbolIcon.typeParameterForeground:    "#ffeb60"
   symbolIcon.unitForeground:             "#ff00ff"
   symbolIcon.variableForeground:         "#3143ad"
 
@@ -787,6 +787,7 @@ semanticTokenColors:
   variable.typeHint:      "#ffeb60"
   annotation:             "#f92672"
   class:                  "#ffeb60"
+  class.decorator:        "#f92672"
   class.typeHint:         "#ffeb60"
   class.builtin:          "#df75df"
   comment:                "#627373"
@@ -1224,11 +1225,25 @@ tokenColors:
 # C++ (.cpp)
 ##########################################################
   -
-    name:  C++ Class Template
+    name:  C++ attributes
+    scope:
+      - entity.other.attribute
+      - support.other.attribute
+    settings:
+      fontStyle: "bold"
+  -
+    name:  C++ class template
     scope:
       - entity.name.type.class.templated
     settings:
       foreground: "#ffeb60"
+  -
+    name:  C++ doxygen keywords
+    scope:
+      - storage.type.class.doxygen
+    settings:
+      foreground: "#5bd35f"
+      fontStyle: "italic underline"
   -
     name:  C++ enumerator
     scope:
@@ -1249,6 +1264,13 @@ tokenColors:
     settings:
       foreground: "#82b7e1"
   -
+    name:  C++ function parameters
+    scope:
+      - variable.paramater
+      - entity.name.variable.parameter
+    settings:
+      foreground: "#00ffff"
+  -
     name:  C++ global variables
     scope:
       - variable.other.global
@@ -1262,6 +1284,9 @@ tokenColors:
       - keyword.control
       - keyword.operator.at
       - keyword.operator.cast
+      - keyword.operator.noexcept
+      - keyword.operator.sizeof
+      - storage.modifier.specifier.functional.post-parameters
       - storage.type.built-in
       - storage.type.class
       - storage.type.enum
@@ -1270,16 +1295,6 @@ tokenColors:
       - storage.type.template
     settings:
       foreground: "#df75df"
-  -
-    name:  C++ preprocessor keywords
-    scope:
-      - entity.other.attribute-name
-      - keyword.control.directive
-      - keyword.preprocessor
-      - meta.preprocessor.macro
-      - punctuation.definition.directive
-    settings:
-      foreground: "#fbb840"
   -
     name:  C++ labels
     scope:
@@ -1331,6 +1346,14 @@ tokenColors:
     settings:
       foreground: "#86b5e3"
   -
+    name:  C++ numbers
+    scope:
+      - constant.numeric
+      - entity.name.operator.custom-literal.number
+      - keyword.other.unit
+    settings:
+      foreground: "#ff9f40"
+  -
     name:  C++ operators
     scope:
       - keyword.operator
@@ -1353,43 +1376,21 @@ tokenColors:
     settings:
       foreground: "#86b5e3"
   -
-    name:  C++ function parameters
+    name:  C++ preprocessor keywords
     scope:
-      - variable.paramater
-      - entity.name.variable.parameter
+      - entity.other.attribute-name
+      - keyword.control.directive
+      - keyword.preprocessor
+      - meta.preprocessor.macro
+      - punctuation.definition.directive
     settings:
-      foreground: "#00ffff"
+      foreground: "#fbb840"
   -
     name:  C++ static fields
     scope:
       - variable.other.property.static
     settings:
       foreground: "#f748ba"
-  -
-    name:  C++ types
-    scope:
-      - entity.name.type
-      - entity.name.struct
-      - entity.name.type.class
-      - entity.name.type.struct
-      - entity.name.type.enum
-      - markup.changed.git_gutter
-      - meta.use.php
-      - support.class
-      - support.other.namespace.use.php
-      - support.other.namespace.php
-      - support.type
-      - support.type.sys-types
-    settings:
-      foreground: "#ffeb60"
-  -
-    name:  C++ numbers
-    scope:
-      - constant.numeric
-      - entity.name.operator.custom-literal.number
-      - keyword.other.unit
-    settings:
-      foreground: "#ff9f40"
   -
     name:  C++ storage and annotation
     scope:
@@ -1413,17 +1414,34 @@ tokenColors:
     settings:
       foreground: "#b8e272"
   -
+    name:  C++ string escape characters
+    scope:
+      - constant.character.escape
+    settings:
+      foreground: "#ff8040"
+  -
     name:  C++ string placeholders
     scope:
       - string constant.other.placeholder
     settings:
       foreground: "#80ff80"
   -
-    name:  C++ string escape characters
+    name:  C++ types
     scope:
-      - constant.character.escape
+      - entity.name.type
+      - entity.name.struct
+      - entity.name.type.class
+      - entity.name.type.struct
+      - entity.name.type.enum
+      - markup.changed.git_gutter
+      - meta.use.php
+      - support.class
+      - support.other.namespace.use.php
+      - support.other.namespace.php
+      - support.type
+      - support.type.sys-types
     settings:
-      foreground: "#ff8040"
+      foreground: "#ffeb60"
 #####################################################################
 # C# (.cs)
 #####################################################################
