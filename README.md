@@ -1,3 +1,5 @@
-# Dark Coffee theme for VS Code
+# Dark Coffee Theme
 
-Very dark theme with bright syntax colouring for VS Code.
+Dark theme for VS Code/VSCodium, based on the Gitlab Dark theme.
+
+![Demo](assets/dark_coffee_demo.gif)
