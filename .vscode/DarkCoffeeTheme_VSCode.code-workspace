@@ -21,27 +21,41 @@
   },
   "tasks": {
     "version": "2.0.0",
+    "problemMatcher": [],
+    "options": {
+      "cwd": "${workspaceFolder}",
+    },
+    "group": {
+      "kind": "build",
+      "isDefault": false
+    },
+    "inputs": [
+      {
+        "id": "codeOrCodium",
+        "description": "Which program are you installing to?",
+        "type": "pickString",
+        "default": "code",
+        "options": [
+          "code",
+          "codium"
+        ]
+      }
+    ],
     "tasks": [
       {
         "label": "Update colors",
         "type": "shell",
+        "command": "npx js-yaml themes/DarkCoffee-color-theme.yaml > themes/DarkCoffee-color-theme.json",
         "group": {
-          "kind": "build",
           "isDefault": true
         },
-        "command": "npx js-yaml themes/DarkCoffee-color-theme.yaml > themes/DarkCoffee-color-theme.json",
-        "options": {
-          "cwd": "${workspaceFolder}",
-        },
-        "problemMatcher": [],
       },
       {
         "label": "Package and install",
         "type": "shell",
         "group": "build",
-        "problemMatcher": [],
         "linux": {
-          "command": "rm -f dark-coffee-theme-* && npm version patch && vsce package && ls -1 dark-coffee-theme-* | xargs -I {} code --install-extension {}",
+          "command": "rm -f dark-coffee-theme-* && npm version patch && vsce package && ls -1 dark-coffee-theme-* | xargs -I {} ${input:codeOrCodium} --install-extension {}",
           "options": {
             "shell": {
               "executable": "/bin/sh",
@@ -51,7 +65,7 @@
           "cwd": "${workspaceFolder}",
         },
         "windows": {
-          "command": "@del dark-coffee-theme-* && npm version patch && vsce package && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do @(code --install-extension %i)",
+          "command": "@del dark-coffee-theme-* >nul && npm version patch && vsce package && for /f \"usebackq tokens=*\" %i in (`dir /b dark-coffee-theme-*`) do @(${input:codeOrCodium} --install-extension %i)",
           "options": {
             "shell": {
               "executable": "cmd.exe",
