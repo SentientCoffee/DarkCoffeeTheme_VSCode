@@ -4,7 +4,7 @@
     "description": "Dark VSCode theme extended from the Gitlab Dark theme, with purple accents",
     "publisher": "SentientCoffee",
     "icon": "assets/icon.png",
-    "version": "0.0.35",
+    "version": "0.0.36",
     "engines": {
         "vscode": "^1.50.0"
     },
