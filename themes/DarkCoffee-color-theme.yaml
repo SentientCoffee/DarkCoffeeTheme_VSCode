@@ -31,6 +31,10 @@ colors:
   activityBarBadge.foreground: "#d4d4d4"
   activityBarBadge.background: "#7e57c2"
 
+  activityBarItem.profilesBackground:      "#ff00ff"
+  activityBarItem.profilesForeground:      "#ff00ff"
+  activityBarItem.profilesHoverForeground: "#ff00ff"
+
   badge.background: "#5c408f"
   badge.foreground: "#eeeeee"
 
@@ -65,12 +69,17 @@ colors:
   checkbox.background: "#4a4a4a"
   checkbox.border:     "#4a4a4a"
   checkbox.foreground: "#d4d4d4"
+  checkbox.selectBackground:               "#ff00ff"
+  checkbox.selectBorder:                   "#ff00ff"
 
-  commandCenter.activeBackground: "#4a4a4a"
-  commandCenter.activeForeground: "#d4d4d4"
-  commandCenter.background:       "#2b2b2b"
-  commandCenter.border:           "#757575"
-  commandCenter.foreground:       "#b4b4b4"
+  commandCenter.activeBackground:   "#4a4a4a"
+  commandCenter.activeForeground:   "#d4d4d4"
+  commandCenter.background:         "#2b2b2b"
+  commandCenter.border:             "#757575"
+  commandCenter.foreground:         "#b4b4b4"
+  commandCenter.activeBorder:       "#757575"
+  commandCenter.inactiveBorder:     "#757575"
+  commandCenter.inactiveForeground: "#d4d4d4"
 
   dart.closingLabels:   "#757575"
   dart.flutterUiGuides: "#ff00ff"
@@ -340,9 +349,13 @@ colors:
   extensionBadge.remoteBackground: "#5c408f"
   extensionBadge.remoteForeground: "#d4d4d4"
 
+  extensionButton.background:               "#5c408f"
+  extensionButton.foreground:               "#d4d4d4"
+  extensionButton.hoverBackground:          "#7e57c2"
   extensionButton.prominentBackground:      "#5c408f"
   extensionButton.prominentForeground:      "#d4d4d4"
   extensionButton.prominentHoverBackground: "#7e57c2"
+  extensionButton.separator:                "#b4b4b4"
 
   extensionIcon.starForeground:       "#d4d4d4"
   extensionIcon.verifiedForeground:   "#d4d4d4"
@@ -359,8 +372,6 @@ colors:
   gitDecoration.stageModifiedResourceForeground: "#ffcc44"
   gitDecoration.submoduleResourceForeground:     "#b4b4b4"
   gitDecoration.untrackedResourceForeground:     "#00db2fc0"
-
-  inlineTitleBar.background: "#ff00ff"
 
   input.background:            "#1a1a1a"
   input.border:                "#4a4a4a"
@@ -445,15 +456,19 @@ colors:
   merge.incomingContentBackground: "#aa662277"
   merge.incomingHeaderBackground:  "#aa6622"
 
-  mergeEditor.change.background:                       "#ff00ff"
-  mergeEditor.change.word.background:                  "#ff00ff"
-  mergeEditor.conflict.handled.minimapOverViewRuler:   "#ff00ff"
-  mergeEditor.conflict.handledFocused.border:          "#ff00ff"
-  mergeEditor.conflict.handledUnfocused.border:        "#ff00ff"
-  mergeEditor.conflict.unhandled.minimapOverViewRuler: "#ff00ff"
-  mergeEditor.conflict.unhandledFocused.border:        "#ff00ff"
-  mergeEditor.conflict.unhandledUnfocused.border:      "#ff00ff"
+  mergeEditor.change.background:                       "#00548b88"
+  mergeEditor.change.word.background:                  "#00548bcc"
+  mergeEditor.conflict.handled.minimapOverViewRuler:   "#aa6622"
+  mergeEditor.conflict.handledFocused.border:          "#00548b"
+  mergeEditor.conflict.handledUnfocused.border:        "#00548b"
+  mergeEditor.conflict.unhandled.minimapOverViewRuler: "#00548b"
+  mergeEditor.conflict.unhandledFocused.border:        "#aa6622"
+  mergeEditor.conflict.unhandledUnfocused.border:      "#aa6622"
   mergeEditor.conflictingLines.background:             "#ff00ff"
+  mergeEditor.changeBase.background:                   "#ff00ff"
+  mergeEditor.changeBase.word.background:              "#ff00ff"
+  mergeEditor.conflict.input1.background:              "#ff00ff"
+  mergeEditor.conflict.input2.background:              "#ff00ff"
 
   minimap.background:                   "#1a1a1a"
   minimap.errorHighlight:               "#dd3636"
@@ -513,10 +528,13 @@ colors:
 
   notificationToast.border: "#4a4a4a"
 
+  odin.inlayHints.background:              "#ff00ff"
+  odin.inlayHints.foreground:              "#ff00ff"
+
   panel.background:              "#1a1a1a"
   panel.border:                  "#4a4a4a"
   panel.dropBorder:              "#4a4a4a"
-  panelInput.border:             "#ff00ff"
+  panelInput.border:             "#4a4a4a"
   panelSection.border:           "#4a4a4a"
   panelSection.dropBackground:   "#4a4a4a77"
   panelSectionHeader.background: "#2b2b2b"
@@ -577,7 +595,7 @@ colors:
   settings.dropdownBorder:        "#4a4a4a"
   settings.dropdownForeground:    "#b4b4b4"
   settings.dropdownListBorder:    "#2b2b2b"
-  settings.focusedRowBackground:  "#2b2b2b"
+  settings.focusedRowBackground:  "#3c3c3c"
   settings.focusedRowBorder:      "#757575"
   settings.headerBorder:          "#4a4a4a"
   settings.headerForeground:      "#d4d4d4"
@@ -585,7 +603,7 @@ colors:
   settings.numberInputBackground: "#2b2b2b"
   settings.numberInputBorder:     "#4a4a4a"
   settings.numberInputForeground: "#b4b4b4"
-  settings.rowHoverBackground:    "#4a4a4a"
+  settings.rowHoverBackground:    "#2b2b2b"
   settings.sashBorder:            "#4a4a4a"
   settings.textInputBackground:   "#2b2b2b"
   settings.textInputBorder:       "#4a4a4a"
@@ -602,8 +620,8 @@ colors:
 
   sideBarTitle.foreground: "#d4d4d4"
 
-  sideBySideEditor.horizontalBorder: "#ff00ff"
-  sideBySideEditor.verticalBorder:   "#ff00ff"
+  sideBySideEditor.horizontalBorder: "#757575"
+  sideBySideEditor.verticalBorder:   "#757575"
 
   statusBar.background:          "#2b2b2b"
   statusBar.border:              "#4a4a4a"
@@ -627,8 +645,6 @@ colors:
   statusBarItem.prominentHoverBackground:   "#ffffff44"
   statusBarItem.remoteBackground:           "#5c408f"
   statusBarItem.remoteForeground:           "#d4d4d4"
-  statusBarItem.settingsProfilesBackground: "#ff00ff"
-  statusBarItem.settingsProfilesForeground: "#ff00ff"
   statusBarItem.warningBackground:          "#ffcc44"
   statusBarItem.warningForeground:          "#2b2b2b"
 
@@ -724,8 +740,8 @@ colors:
   terminalCommandDecoration.errorBackground:   "#dd3636"
   terminalCommandDecoration.successBackground: "#009b22"
 
-  terminalCursor.background: "#eeeeee"
-  terminalCursor.foreground: "#757575"
+  terminalCursor.background: "#d4d4d4"
+  terminalCursor.foreground: "#4a4a4a"
 
   terminalOverviewRuler.cursorForeground:    "#757575"
   terminalOverviewRuler.findMatchForeground: "#c5944b81"
@@ -767,13 +783,14 @@ colors:
   tree.tableOddRowsBackground: "#ffffff11"
 
   walkThrough.embeddedEditorBackground: "#2b2b2b77"
+  walkthrough.stepTitle.foreground:     "#d4d4d4"
 
   welcomePage.background:          "#1a1a1a"
   welcomePage.progress.background: "#4a4a4a77"
   welcomePage.progress.foreground: "#008dc5"
   welcomePage.tileBackground:      "#2b2b2b"
+  welcomePage.tileBorder:          "#757575"
   welcomePage.tileHoverBackground: "#4a4a4a77"
-  welcomePage.tileShadow:          "#2b2b2b44"
 
   window.activeBorder:   "#00000000"
   window.inactiveBorder: "#00000000"
@@ -1685,6 +1702,7 @@ tokenColors:
   -
     name:  Shell options
     scope:
+      - constant.other.option
       - constant.other.option.shell
       - constant.other.option.dash.shell
       - string.unquoted.argument.shell
@@ -1713,3 +1731,13 @@ tokenColors:
       - keyword.operator.logical.shell
     settings:
       foreground: "#df75df"
+#####################################################################
+# Powershell (.ps1)
+#####################################################################
+  -
+    name:  Powershell automatic variables and punctuation
+    scope:
+      - support.variable.automatic.powershell
+      - punctuation.definition.variable.powershell
+    settings:
+      foreground: "#f92672"
