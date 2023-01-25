@@ -47,13 +47,13 @@
         "type": "shell",
         "command": "npx js-yaml themes/DarkCoffee-color-theme.yaml > themes/DarkCoffee-color-theme.json",
         "group": {
-          "isDefault": true
+          "kind": "build",
+          "isDefault": false
         },
       },
       {
         "label": "Package and install",
         "type": "shell",
-        "group": "build",
         "linux": {
           "command": "rm -f dark-coffee-theme-* && npm version patch && vsce package && ls -1 dark-coffee-theme-* | xargs -I {} ${input:codeOrCodium} --install-extension {}",
           "options": {
@@ -74,7 +74,12 @@
           },
           "cwd": "${workspaceFolder}",
         },
-      }
+      },
+      {
+        "label": "Update colors",
+        "type": "shell",
+        "command": "vsce publish",
+      },
     ]
   },
   "settings": {}
