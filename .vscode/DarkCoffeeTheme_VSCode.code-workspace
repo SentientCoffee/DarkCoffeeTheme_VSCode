@@ -76,7 +76,7 @@
         },
       },
       {
-        "label": "Update colors",
+        "label": "Publish",
         "type": "shell",
         "command": "vsce publish",
       },
