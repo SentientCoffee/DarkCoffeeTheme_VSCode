@@ -274,7 +274,7 @@ colors:
   editorInlayHint.background:          "#2b2b2b"
   editorInlayHint.foreground:          "#b4b4b4"
   editorInlayHint.parameterBackground: "#2b2b2b"
-  editorInlayHint.parameterForeground: "#b4b4b4"
+  editorInlayHint.parameterForeground: "#66cccc"
   editorInlayHint.typeBackground:      "#2b2b2b"
   editorInlayHint.typeForeground:      "#b4b4b4"
 
@@ -829,7 +829,7 @@ semanticTokenColors:
   numberLiteral:          "#ff9f40"
   operator:               "#d4d4d4"
   operatorOverloaded:     "#d4d4d4"
-  parameter:              "#00ffff"
+  parameter:              "#66cccc"
   plainKeyword:           "#df75df"
   property:               "#c7529e"
   property.static:        "#f748ba"
@@ -1286,7 +1286,7 @@ tokenColors:
       - variable.paramater
       - entity.name.variable.parameter
     settings:
-      foreground: "#00ffff"
+      foreground: "#66cccc"
   -
     name:  C++ global variables
     scope:
@@ -1518,7 +1518,7 @@ tokenColors:
       - variable.parameter.function.language.python
       - variable.parameter.function-call.python
     settings:
-      foreground: "#00ffff"
+      foreground: "#66cccc"
   -
     name:  Python logical operators
     scope:
@@ -1647,7 +1647,7 @@ tokenColors:
     scope:
       - variable.parameter.jai
     settings:
-      foreground: "#00ffff"
+      foreground: "#66cccc"
   -
     name:  Jai enumerators
     scope:

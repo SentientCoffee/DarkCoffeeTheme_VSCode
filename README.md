@@ -1,6 +1,6 @@
 # Dark Coffee Theme
 
-Dark theme for VS Code/VSCodium, based on the Gitlab Dark theme.
+Dark VSCode theme with purple accents. Syntax highlighting extended from the Tomorrow Night theme.
 
 ## Demo
 
