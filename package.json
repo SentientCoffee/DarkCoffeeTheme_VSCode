@@ -4,7 +4,7 @@
     "description": "Dark VSCode theme with purple accents. Syntax highlighting extended from the Tomorrow Night theme.",
     "publisher": "SentientCoffee",
     "icon": "assets/icon.png",
-    "version": "0.0.37",
+    "version": "0.0.38",
     "engines": {
         "vscode": "^1.50.0"
     },
