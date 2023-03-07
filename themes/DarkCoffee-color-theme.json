@@ -668,12 +668,15 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "variable.global": "#5972bb",
+    "variable.globalScope": "#5972bb",
+    "variable.functionScope": "#c17e70",
     "variable.local": "#c17e70",
-    "variable.readonly": "#5972bb",
+    "variable.static": "#f748ba",
     "variable.typeHint": "#ffeb60",
     "annotation": "#f92672",
     "class": "#ffeb60",
     "class.decorator": "#f92672",
+    "class.deduced": "#df75df",
     "class.typeHint": "#ffeb60",
     "class.builtin": "#df75df",
     "comment": "#627373",
@@ -682,6 +685,7 @@
     "enum": "#ffeb60",
     "enumMember": "#c4e49a",
     "enummember": "#c4e49a",
+    "enum.deduced": "#df75df",
     "field": "#c7529e",
     "field.static": "#f748ba",
     "function": "#82b7e1",
@@ -709,7 +713,8 @@
     "stringEscapeCharacter": "#ff8040",
     "struct": "#ffeb60",
     "templateType": "#ffeb60",
-    "type": "#ffeb60"
+    "type": "#ffeb60",
+    "type.deduced": "#df75df"
   },
   "tokenColors": [
     {
